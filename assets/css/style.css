@@ -1,0 +1,1153 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html,
+body {
+    height: 100%;
+    /* Ensures full viewport height is available for sections */
+}
+
+body {
+    font-family: 'Koh Santepheap', 'Poppins';
+    background-image: url('assets/imgs/schedule-modal/bg.png');
+}
+
+/* .booking .card {
+    min-height: 80vh; 
+} */
+header {
+    background-image: linear-gradient(to right, #ff6600 -100%, #262928 50%);
+  }
+  main {
+    background-color: black;
+  }
+.hero{
+    background-image: radial-gradient(circle at center, #f76100 100%, #857a3e 100%, transparent 100%);
+    /* background-color: #000026; */
+}
+.katha-booking-section, .event-section, .gaushala-section, .google-map, .nearby-temple{
+    background-image: radial-gradient(circle at center, #ffffff, #ffa200 100%, transparent 100%);
+}
+/* 
+h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0% 0%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px); 
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.6); 
+  } */
+
+.main{
+    width:90vw;
+}
+html, body {
+    scroll-behavior: smooth; /* Smooth scrolling */
+   
+  }
+
+
+/* Go to Top Button Styles */
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ff3d00; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .go-to-top:hover {
+    background-color: #e64a19; /* Darker button color on hover */
+  }
+  
+
+.hero-section {
+    filter: blur(3px);
+    -webkit-filter: blur(8px);
+    z-index: 0 !important;
+    position: relative;
+    width: 94vw;
+
+}
+
+.hero-img {
+    position: relative;
+    /* top: 2%; */
+    /* height: 57vh; */
+    width: 25vw;
+    --img-width:25vw;
+    /* box-shadow: 0 4px 14px rgb(0, 0, 0); */
+    border-radius: 3%;
+    padding-bottom: 2%;
+    border-bottom: #ece6e638 solid 3px;
+
+}
+.hero-section+div {
+    position: absolute;
+    top: 10%;
+    left: calc(50%- var(--img-width));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    width: 98vw;
+
+}
+
+/* Katha Button Image */
+
+/* Parent container for the buttons */
+.katha-button-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for individual buttons */
+  .img-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 10px 20px; /* Replaces mx-5 my-2 */
+  }
+  
+  /* Styling for button images */
+  .btn-image {
+    width: 160px;
+    height: auto;
+    display: block;
+  }
+  
+
+/* Modal and Image */
+.main-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-modal img {
+    position: relative;
+    height: 90%;
+    opacity: 0.9;
+    transition: all 2s;
+    filter: blur(0px) !important;
+    -webkit-filter: blur(0px) !important;
+}
+
+/* Links and Navbar */
+.container-fluid a,
+.collapse ul a {
+    font-family: 'Open Sans', sans-serif;
+    font: 13px;
+    color: white;
+}
+
+.nav-link {
+    margin-left: 1px;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    color: gold;
+}
+
+.contact-no:hover {
+    color: gold !important;
+}
+
+/* Donate Button */
+.btn,
+.btn-view-more {
+    color: white;
+    /* border: 1px solid gold; */
+    border-radius: 33px !important;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    /* background-image: linear-gradient(to right, #000000 0%, #0e0202 100%); */
+    /* background-color: #000026; */
+    margin-bottom: 1%;
+    box-shadow: 0 4px 14px rgb(0, 0, 0);
+    background-color: #740c16 !important;
+}
+
+.btn:hover {
+    color: gold;
+    border: 1px solid white;
+    background-color: #b02a37;
+
+}
+
+.btn-view-more:hover {
+    color: gold;
+    border: 1px solid white;
+    background-color: #b02a37;
+}
+
+
+
+    /* Sidebar for Mobile Screens */
+    /* Sidebar Button Styling */
+.navbar-toggler {
+    border: 1px solid white; /* Makes the button border white */
+    background-color: transparent; /* Keeps background clear */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Ensures the icon bars are white */
+  }
+  
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        padding-top: 60px;
+        display: none;
+        z-index: 1000;
+        transition: 0.3s;
+        background-image: radial-gradient(circle at center, #f76100 50%, #857a3e 100%, transparent 100%);
+
+      }
+  
+      .sidebar a {
+        padding: 8px 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+  
+      .sidebar a:hover {
+        background-color: #575757;
+      }
+  
+      .sidebar .closebtn {
+        position: absolute;
+        top: -10px !important;
+        right: 25px;
+        font-size: 50px !important;
+        color: white;
+        padding: 10px;
+      }
+
+/* Fixed Button */
+.fixed-container {
+    position: fixed;
+    top:45%;
+    right: 2px;
+    text-align: center;
+    z-index: 3;
+}
+
+.fixed-container-live {
+    position: fixed;
+    bottom: 2%;
+    left: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.fixed-image {
+    width: 100px;
+    height: auto;
+}
+
+.fixed-button {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.fixed-button-live {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 300px;
+}
+
+
+.btn-fixed{
+    border-radius: 100%;
+    box-shadow: 0 4px 14px rgb(0, 0, 0);
+    background-color: #740c16 !important;
+}
+
+.btn-fixed{
+    margin-top: 10px;
+    width: 50px;
+}
+
+/* Modal Header */
+.katha-button div {
+    margin-left: 10%;
+}
+
+.modal-header {
+    background-image: linear-gradient(to right, #ff6600 -100%, #262928 50%);
+}
+
+.modal-title:hover {
+    color: gold !important;
+}
+
+/* iframe {
+    border: 1px solid white;
+} */
+
+.modal-body iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.modal-youtube-section {
+    background-image: linear-gradient(to right, #ff6600 -100%, #262928 50%);
+    color: white;
+}
+
+.list-group-item {
+    background-image: linear-gradient(to right, #ff6600 -100%, #262928 50%);
+    color: white;
+}
+
+/* Video Info Styling */
+.text-muted {
+    color: white !important;
+}
+
+.video-thumbnail {
+    flex-shrink: 0;
+   
+}
+
+video {
+    cursor: auto !important;
+}
+
+.video-info h6 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffa900;
+}
+
+.video-info h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffa900;
+    font-weight: bold;
+}
+
+.video-info p {
+    font-size: 0.780rem;
+    margin: 0;
+}
+
+.video-description {
+    /* border: 2px solid wheat; */
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-description h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffa900;
+}
+
+.video-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+
+/* Katha Booking */
+
+.katha-schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Modal styling */
+.modal-schedule {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.modal-schedule-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 3;
+}
+.modal-schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.modal-schedule-header {
+    font-size: 24px;
+    margin-top: 15px;
+}
+.modal-schedule-info {
+    margin: 10px 0;
+    color: #555;
+}
+.topics-schedule-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.topics-schedule-list li {
+    margin: 5px 0;
+}
+.close-schedule-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* Asharm booking */
+/* .carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+} */
+
+#ashramImageSlider .carousel-inner img {
+    height: 500px; /* Required height */
+    object-fit: cover; /* Ensures the image fits without distortion */
+  }
+  
+.room-feature-card {
+    /* background: rgb(131,58,180);
+    background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    background-image: radial-gradient(circle at center, #ffffff -100%, #ffa200 100%, transparent 100%);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-feature-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.5);
+}
+
+.booking-modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+}
+
+.platform-logo {
+    max-width: 20%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.btn-danger, .btn-warning {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+.ashram-booking-section {
+    color: white;
+    /* padding: 20px; */
+    border-radius: 10px;
+  }
+
+  .index-page img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn-primary {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #ddb41f;
+  }
+
+.room-info {
+    padding: 20px;
+    background-color: #cd5200;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .room-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .room-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .btn-view-all {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #imageOverlay {
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#overlay-images img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visuals */
+    transition: transform 0.3s ease;
+}
+
+#overlay-images img:hover {
+    transform: scale(1.1); /* Optional: Add hover zoom effect */
+}
+
+
+/* Modal styling */
+.booking-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.booking-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.close-booking-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.platforms-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.platform-item {
+    display: flex;
+    align-items: center;
+    gap: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.platform-item:hover {
+    background-color: #f0f0f0;
+}
+
+.platform-logo {
+    width: 20%;
+    height: auto;
+}
+
+.booking-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.booking-link:hover {
+    color: #0056b3;
+}
+
+
+
+
+ /* Evenet  */
+ /* Table Styling */
+ /* General Button Styles */
+/* General Button Styles */
+/* Default: Desktop Mode (Buttons aligned horizontally under the image) */
+
+
+  
+.table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .table thead {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  .table td,
+  .table th {
+    vertical-align: middle;
+    padding: 12px;
+  }
+  
+  .table-bordered {
+    border: 1px solid #dee2e6;
+  }
+
+/* Common Card Styling */
+
+/* .gaushala-card {
+    background-color: #333; 
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 6px rgb(0, 0, 0);
+    background: rgb(131,58,180);
+    background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transition: transform 0.3s;
+    
+    overflow: visible; 
+} */
+.event-card img  {
+    /* width: 100%;
+    background-size: cover;
+    height:45%;
+    border-radius: 8px; */
+}
+/* .gaushala-card img  {
+    width: 100%;
+    background-size: cover;
+    height: 50%;
+    border-radius: 8px;
+} */
+
+/* .event-card:hover, .gaushala-card:hover {
+    transform: scale(1.02); 
+}
+
+.event-card-content, .gaushala-card-content {
+    padding: 4px; 
+}
+
+.event-card-title, .gaushala-card-title {
+    padding:5px 10px;
+    font-size: 1.1rem;
+    margin-bottom: 5px; 
+    color: #fff;
+}
+
+.event-card-content p, .gaushala-card-content p {
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 0.8rem;
+    white-space: wrap; 
+    overflow: visible;
+    text-overflow: ellipsis; 
+} */
+
+/* gaushala CSS */
+/* Section Divider */
+.section-divider {
+    border: 1px solid #ffffff;
+  }
+  
+  /* Custom Divider Under Learn More */
+  .custom-divider {
+    border: 1px solid #1f0003 !important;
+    width: 100% !important;
+    margin: 10px auto !important;
+  }
+  
+  /* Buttons Responsive Layout */
+  .gaushala-section .btn {
+    width: 100%; /* Full width on small screens */
+  }
+  
+.btn-visit {
+    margin-top: 5% 32%;
+    color: #fff;
+    background-color: #dc3545; /* Danger color for buttons */
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px; /* Reduce padding for smaller button size */
+    font-size: 0.9rem; /* Smaller font size to fit compact design */
+}
+
+.btn-visit:hover {
+    background-color: #b02a37; /* Darken button on hover */
+}
+
+  
+  .custom-ratio {
+    position: relative;
+    padding-top: 40.25%; /* 16:9 aspect ratio */
+    height: 50%;
+    overflow: hidden;
+    max-width: 100%; /* Limit width to 80% */
+    margin: auto; /* Center the container */
+    box-shadow: 0 6px 14px rgb(0, 0, 0);
+
+}
+
+
+.custom-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Make the iframe fill the container */
+    height: 100%; /* Make the iframe fill the container */
+    box-shadow: 0 8px 8px 6px rgb(0, 0, 0) !important;
+}
+.related-parts{
+    max-width: 1100px !important;
+    height: auto !important;
+}
+
+
+/* profile */
+
+.profile-card {
+       background-image: radial-gradient(circle at center, #ffffff -45%, #ffa200 100%, transparent 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+    box-shadow: 0 8px 8px 8px rgb(0, 0, 0) !important;
+    transition: transform 0.3s;
+    width: 100%;
+
+}
+
+.profile-card:hover {
+    transform: scale(1.01);
+    /* Slightly scales up the form */
+
+}
+
+.profile-card .col-md-5 {
+    margin-bottom: 20px; /* Adjusts space for smaller screens */
+  }
+
+  .profile-card .col-md-7 {
+    padding-left: 100px; /* Adjust horizontal spacing */
+    margin-top: -6%;
+  }
+
+.profile-card img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 8px 14px rgb(0, 0, 0);
+
+}
+
+.profile-card-content {
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.profile-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-profile {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-profile:hover {
+    background-color: #c82333;
+}
+
+
+/*  */
+.custom-icon {
+    color: #7e000c !important;
+    font-size: 1.2rem !important;
+  }
+  hr {
+    border: 1px solid #ffffff;
+  }
+  p, a,a b{
+    font-size: 0.9rem !important;
+  }
+  
+  /* google map and nearby places */
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.google-map {
+    background-color: #f8f9fa; /* Light background for better visibility */
+  }
+  .google-map .container {
+    max-width: 1140px; /* Ensure container is not too wide */
+  }
+  .google-map h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  /* Add some margin below each iframe for spacing */
+  .google-map iframe {
+    border-radius: 8px; /* Rounded corners for a modern look */
+  }
+ 
+  /*nearby temple btn */
+  .nearby-temple h5{
+    font-size: 1.1rem !important;
+  }
+.custom-btn {
+    background-color: #7e000c; /* Example background color */
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0px;
+  }
+
+  .custom-btn:hover {
+    background-color: #901d28; /* Change the hover color */
+  }
+
+
+/* Footer Styling */
+  .ashram-footer .container {
+    max-width: 80%; /* Adjust the width to 80% of the screen */
+    margin: 0 auto; /* Center the content */
+  }
+.ashram-footer {
+    width: 100%; /* Full-width footer */
+    color: #ffffff;
+    padding: 40px 0;
+    background-color: #0b001a; /* Dark theme consistent with the user preference */
+}
+
+.ashram-footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.ashram-footer .social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.ashram-footer .social-links a:hover {
+    color: gold;
+}
+
+.ashram-footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Contact Section */
+.contact-content {
+    background-image: radial-gradient(circle at center, #ffffff -45%, #ffa200 100%, transparent 100%);
+    padding: 20px;
+    /* border-radius: 8px; */
+}
+
+form .form-control, form .form-select {
+    height: 50px; /* Standardize input height */
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+form .btn-lg {
+    padding: 10px 30px;
+}
+
+/* Miscellaneous */
+.text-dark {
+    color: #333333 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+  
+
+/* Small devices (up to 576px) */
+
+
+@media (max-width: 576px),
+       (min-width: 414px) and (max-width: 480px) {
+        .btn-image {
+        width: 96px;
+        height: auto;
+        display: block;
+        margin-left: 10%;
+    }
+    .hero-section{
+        min-height: 72vh !important;
+    }
+    .katha-button-img {
+        margin-top: 1%;
+        margin-left: -5%;
+    }
+    .hero-img {
+        width: 50vw;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 25px;
+        margin-top: 1%;
+    }
+    .event-card img{
+        height: 140px;
+        margin-left: 9%;
+    }
+    .event-prev, .event-next{
+    margin-left: 3.5%;
+    }
+    #ashramImageSlider .carousel-inner img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .gaumata-img{
+        margin-top: 7%;
+    }
+    #contact{
+        width: 100% !important;
+    }
+}
+
+/* Medium devices (576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .btn-image {
+        width: 110px;
+        height: auto;
+        margin-top: 40%;
+    }
+    .hero-section{
+        min-height: 50vh;
+    }
+    .hero-img {
+        width: 74vw;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 50px;
+        margin-top: 2%;
+    }
+    .profile-card h3 {
+        font-size: calc(1rem + .6vw);
+    }
+    .contact-profile-details a{
+        font-size: 1rem;
+    }
+    #contact{
+        width: 100% !important;
+    }
+    #contact .h3, h3 {
+        font-size: calc(1rem + .6vw);
+    }
+
+    
+}
+
+/*  google map */
+ /* Mobile responsiveness */
+ @media (max-width: 767px) {
+    .google-map iframe {
+      height: 200px; /* Adjust iframe height on smaller screens */
+    }
+  }
+
+/* Large devices (768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .btn-image {
+        width: 20vw;
+        height: auto;
+    }
+    .hero-img {
+        width: 70vw;
+        margin-left: 3%;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 50px;
+        margin-top: 2%;
+    }
+    .profile-card h3 {
+        font-size: calc(1rem + .6vw);
+    }
+    .contact-profile-details a{
+        font-size: 1rem;
+    }
+    #contact{
+        width: 100% !important;
+    }
+}
+
+/* Extra Large devices (992px and above) */
+@media (min-width: 992px) {
+    .btn-image {
+        width: 150px;
+        height: auto;
+    }
+    .hero-section{
+        min-height: 57vh;
+    }
+    .hero-img {
+        width: 26vw;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 50px;
+        margin-top: 2%;
+    }
+    .profile-card h3 {
+        font-size: calc(1rem + .6vw);
+    }
+    .contact-profile-details a{
+        font-size: 1rem;
+    }
+    .event-card img{
+        height: 250px;
+    }
+}
+
+@media (min-width: 1080px )  {
+    .btn-image {
+        width: 150px;
+        height: auto;
+    }
+    .hero-img {
+        width: 26vw;
+    }
+    .hero-section{
+        min-height: 97vh;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 50px;
+        margin-top: -6%;
+    }
+    .profile-card h3 {
+        font-size: calc(1rem + .6vw);
+    }
+    .gaushala-section{
+        width: 100%;
+    }
+    .contact-profile-details a{
+        font-size: 1rem;
+    }
+    #contact{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1280px ) {
+    .btn-image {
+        width: 150px;
+        height: auto;
+    }
+    .hero-img {
+        width: 26vw;
+    }
+    .hero-section{
+        min-height: 97vh;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 50px;
+        margin-top: -6%;
+    }
+    #contact{
+        width: 90% !important;
+    }
+}
+
+@media (min-width:1400px){
+    #contact {
+        width: 74.5% !important;
+    }
+}
+

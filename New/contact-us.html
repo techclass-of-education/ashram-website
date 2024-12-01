@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps and Temples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+            .col-lg-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <!-- Row 1: Google Maps -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h5>Current Location to Shri Krishnaa Sharayashry Ashram</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.400133343215!2d77.6954899!3d27.5696189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f001f109673%3A0x838bd8c62311e14b!2sTarash%20Mandir%20Colony%2C%20Vrindavan%2C%20Uttar%20Pradesh%20281121!5e0!3m2!1sen!2sin!4v1698743771918!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <h5>Atalla Chungi to Shri Krishnaa Sharayashry Ashram</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.207497319774!2d77.6889276!3d27.5680801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f3df808e3fd%3A0xd23fcccb03c2ad6a!2sAtalla%20Chungi%2C%20Vrindavan%2C%20Uttar%20Pradesh%20281121!5e0!3m2!1sen!2sin!4v1698743844176!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- Row 2: Nearby Temples -->
+<!-- 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Temple 1: Prem Mandir</h5>
+                        <p>Distance: 1.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Prem+Mandir" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 2: ISKCON Vrindavan</h5>
+                        <p>Distance: 2.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+ISKCON+Vrindavan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 3: Banke Bihari Temple</h5>
+                        <p>Distance: 3.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Banke+Bihari+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 4: Radha Raman Temple</h5>
+                        <p>Distance: 3.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Raman+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Temple 5: Shri Radha Damodar Temple</h5>
+                        <p>Distance: 4.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Radha+Damodar+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 6: Shri Govind Dev Ji Temple</h5>
+                        <p>Distance: 4.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Govind+Dev+Ji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 7: Shri Ranganath Temple</h5>
+                        <p>Distance: 5.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Ranganath+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 8: Rangaji Temple</h5>
+                        <p>Distance: 5.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Rangaji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 9: Nidhivan Temple</h5>
+                        <p>Distance: 6.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Nidhivan+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 10: Shri Katyayani Peeth</h5>
+                        <p>Distance: 6.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Katyayani+Peeth" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+        
+<!-- 
+       <div class="row">
+            <div class="col-md-6">
+                <h5>Temple 1: Prem Mandir</h5>
+                <p>Distance: 1.5 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Prem+Mandir" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+            <div class="col-md-6">
+                <h5>Temple 2: ISKCON Vrindavan</h5>
+                <p>Distance: 2.0 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+ISKCON+Vrindavan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+         </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h5>Temple 3: Banke Bihari Temple</h5>
+                <p>Distance: 3.0 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Banke+Bihari+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+            <div class="col-md-6">
+                <h5>Temple 4: Radha Raman Temple</h5>
+                <p>Distance: 3.5 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Raman+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h5>Temple 5: Radha Damodar Temple</h5>
+                <p>Distance: 3.8 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Damodar+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+            <div class="col-md-6">
+                <h5>Temple 6: Nidhivan</h5>
+                <p>Distance: 4.0 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Nidhivan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h5>Temple 7: Radha Vallabh Temple</h5>
+                <p>Distance: 4.5 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Vallabh+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+            <div class="col-md-6">
+                <h5>Temple 8: Shahji Temple</h5>
+                <p>Distance: 5.0 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shahji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h5>Temple 9: Keshi Ghat</h5>
+                <p>Distance: 5.5 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Keshi+Ghat" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+            <div class="col-md-6">
+                <h5>Temple 10: Rangji Temple</h5>
+                <p>Distance: 6.0 km</p>
+                <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Rangji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+            </div>
+        </div> -->
+        <div class="row">
+            <h3>These Famous Places Are Near Shri Krishnaa Ashram</h3>
+            <!-- First Column -->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Temple 1: Prem Mandir</h5>
+                        <p>Distance: 1.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Prem+Mandir" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 2: ISKCON Vrindavan</h5>
+                        <p>Distance: 2.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+ISKCON+Vrindavan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 3: Banke Bihari Temple</h5>
+                        <p>Distance: 3.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Banke+Bihari+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 4: Radha Raman Temple</h5>
+                        <p>Distance: 3.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Raman+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <!-- Added Unique Place -->
+                    <div class="col-lg-3">
+                        <h5>Unique Place: Shri Krishna Janmabhoomi</h5>
+                        <p>Distance: 4.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Krishna+Janmabhoomi" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 7: Radha Vallabh Temple</h5>
+                        <p>Distance: 4.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Vallabh+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>Temple 5: Shri Radha Damodar Temple</h5>
+                        <p>Distance: 4.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Radha+Damodar+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 6: Shri Govind Dev Ji Temple</h5>
+                        <p>Distance: 4.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Govind+Dev+Ji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 7: Shri Ranganath Temple</h5>
+                        <p>Distance: 5.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Ranganath+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 8: Rangaji Temple</h5>
+                        <p>Distance: 5.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Rangaji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 9: Nidhivan Temple</h5>
+                        <p>Distance: 6.0 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Nidhivan+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Temple 10: Shri Katyayani Peeth</h5>
+                        <p>Distance: 6.5 km</p>
+                        <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Katyayani+Peeth" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

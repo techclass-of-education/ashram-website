@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Shri Krishna Sharayaashry Aashram - Experience spiritual bliss through katha bookings, events, and more.">
+  <meta name="keywords" content="Krishna, Bhagwat Katha, Shiv Puran, Ram Katha, Spirituality, Events, Aashram">
+
+  <title>Shri Krishna Sharayaashry Aashram</title>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <style>
+    /* Full-page modal styling */
+    .modal-backdrop.show {
+      opacity: 1 !important;
+    }
+    .text-justify {
+  text-align: justify;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="fullPageModal" tabindex="-1" aria-labelledby="fullPageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="background-image: linear-gradient(to top, #000000 0%, #000000 100%);">
+
+        <div class="modal-body main-modal">
+          <img src="assets/gif/load-gif.gif" id="modal-img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-container p-2 rounded" style="background-color: #ffffff;" id="btn-fix-box">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-in-left"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z" />
+      <path fill-rule="evenodd"
+        d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+    </svg>
+  </div>
+
+  <div class="fixed-container" id="fix-box" style="display: none;">
+    <!-- Image -->
+    <img src="assets/imgs/bottom-fix-img/fixed-img.svg" alt="Fixed Image" class="fixed-image" style="height: 25vh; width: auto;">
+    
+    <!-- Close Button -->
+    <svg id="btn-fix-close" style="position: absolute;right:20px;color:white;" xmlns="http://www.w3.org/2000/svg"
+      width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" data-bs-toggle="tooltip" title="Close">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+    </svg>
+    
+    <div>
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/9112341148" target="_blank" data-bs-toggle="tooltip" title="Chat on WhatsApp">
+        <button class="btn-fixed fixed-button mx-2" style="font-size: 1.7rem;">
+          <i class="fab fa-whatsapp text-white"></i>
+        </button>
+      </a>
+  
+      <!-- Email Button -->
+      <a href="mailto:krishnadasji2024@gmail.com" target="_blank" data-bs-toggle="tooltip" title="Email us">
+        <button class="btn-fixed fixed-button" style="font-size: 1.7rem;">
+          <i class="fas fa-envelope text-white"></i>
+        </button>
+      </a>
+    </div>
+  </div>
+  
+  <div class="fixed-container-live">
+    <!-- Live YouTube Button -->
+    <a class="col-12 col-md-6 btn btn-danger fixed-button-live"
+      href="https://www.youtube.com/@acharyakrishnadasofficial7502" target="_blank" data-bs-toggle="tooltip" title="Watch Live">
+      <span style="font-size: larger;padding-right: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+        </svg>
+      </span>
+      <span style="font-size: larger;padding-right: 5px;">Live</span> 
+      <span style="font-size: small;">कथा देखने के लिए सब्सक्राइब करे</span>
+    </a>
+  </div>
+  
+
+
+<!-- Go to Top Button -->
+<button id="goToTopBtn" class="go-to-top" onclick="scrollToTop()" data-bs-toggle="tooltip" title="Go to Top">
+  &#8679; <!-- Up arrow icon -->
+</button>
+
+
+
+
+  <!-- Navbar (Top Navigation) -->
+  <header class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/imgs/logo/brand-logo.png" alt="Brand Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" onclick="openSidebar()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#katha-booking">Katha Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ashram-booking-section">Room Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#upcoming-event">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gaushala">Gaushala</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="New/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Right-aligned Contact and Donate Button -->
+          <div class="d-flex align-items-center">
+            <!-- Phone Number Icon and Number -->
+            <span class="me-3 d-flex align-items-center">
+
+              <a href="tel:+917983887273" class="text-white text-decoration-none">
+                <strong class="text-white contact-no"><i class="fa-solid fa-phone contact-no me-2 text-white"></i>
+                  +91-7983887273</strong>
+              </a>
+            </span>
+
+            <!-- Donate Button -->
+            <a href="New/donation.html" class="btn btn-danger custom-donate-btn"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Click to make a donation">
+            Donate Now
+         </a>
+                   </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Sidebar (For Small Screens) -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+    <a href="#home" onclick="scrollToSection('home')">Home</a>
+    <a href="#katha-booking" onclick="scrollToSection('carouselExampleIndicators')">Katha Booking</a>
+    <a href="#ashram-booking-section" onclick="scrollToSection('ashram-booking-section')">Room Booking</a>
+    <a href="#upcoming-event" onclick="scrollToSection('event')">Event</a>
+    <a href="#gaushala" onclick="scrollToSection('gaushala')">Gaushala</a>
+    <a href="New/gallery.html">Gallery</a>
+    <a href="New/donation.html">Donate Now</a>
+    <a href="#profile" onclick="scrollToSection('profile')">About Us</a>
+    <a href="#contact-us" onclick="scrollToSection('contact-us')">Contact Us</a>
+</div>
+
+  <main class="bg-dark">
+    <section class="container-fluid hero">
+      <div class="row hero-section ml-0"
+        style="background-image: url(assets/imgs/hero/orange-sky.png);background-repeat:  no-repeat; background-size: cover;min-height: 96vh;">
+        <!-- Hero Image Section -->
+
+      </div>
+      <div>
+        <div class="col-lg-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <img src="assets/imgs/hero/main-img.png" class="hero-img">
+        </div>
+
+        <!-- Button Image -->
+        <div class="col-12 d-flex flex-wrap flex-md-row flex-column justify-content-center align-items-center katha-button-img">
+  
+   <!-- Bhagwat Katha Link with Tooltip -->
+<a href="New/bhagwat-katha-youtube.html" class="img-btn mx-5 my-2" 
+data-bs-toggle="tooltip" data-bs-placement="top" title="Watch Bhagwat Katha Videos">
+ <img src="assets/imgs/button-image/Krishna.svg" alt="Bhagwat Katha" class="btn-image">
+</a>
+
+<!-- Shiv Puran Link with Tooltip -->
+<a href="New/shivkatha-youtube.html" class="img-btn mx-5 my-2" 
+data-bs-toggle="tooltip" data-bs-placement="top" title="Watch Shiv Mahapuran Videos">
+ <img src="assets/imgs/button-image/Shiv.svg" alt="Shiv Puran" class="btn-image">
+</a>
+
+<!-- Ram Katha Link with Tooltip -->
+<a href="New/ram-katha-youtube.html" class="img-btn mx-5 my-2"
+data-bs-toggle="tooltip" data-bs-placement="top" title="Watch Ram Katha Videos">
+ <img src="assets/imgs/button-image/Ram.svg" alt="Ram Katha" class="btn-image">
+</a>
+
+          
+        </div>
+        
+      
+      
+
+      </div>
+
+
+      <!-- Ram Katha Modal -->
+      <div class="modal fade" id="ramKathaModal" tabindex="-1" aria-labelledby="ramKathaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center text-white" id="ramKathaModalLabel">Shri Ram Katha</h5>
+              <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-youtube-section">
+              <div class="row g-4">
+                <!-- Video Column -->
+                <!-- Part 1: Video with title and description -->
+                <div class="col-12 col-lg-7 mb-lg-0">
+                  <div class="ratio ratio-16x9">
+                    <!-- Updated YouTube link with autoplay and mute parameters -->
+                    <iframe src="https://www.youtube.com/embed/d4a_HzzGnOs?autoplay=1&mute=1" title="Ram Katha Video"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="video-description mt-3">
+                    <h5 class="mb-1">|| Day- 1 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur</h5>
+                    <p class="text-muted mb-0">
+                      || जय श्री राम || आप देख रहे हैं कथा प्रवक्ता आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से
+                      श्री
+                      राम कथा का भव्य आयोजन दिनांक 24 दिसंबर 2023 से 1 जनवरी 2024 तक कथा समय दोपहर 2:00 बजे से 5:00
+                      बजे
+                      तक कथा स्थल हनुमान मंदिर प्रांगण ले-आउट नागपुर महाराज जी की आगामी कथाओं का श्रवण करने के लिए
+                      महाराज जी के यूट्यूब चैनल को सब्सक्राइब करें एवं लाइक करें महाराज जी से संपर्क करने के लिए
+                      संपर्क
+                      सूत्र 9897619231 7983887273
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Related Parts Column -->
+                <div class="col-12 col-lg-5 d-flex flex-column">
+                  <ul class="list-group">
+                    <!-- Part 2: Video with title and description -->
+                    <li class="list-group-item align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/FzeG3KH-w9Q"
+                          title="Part 2: Introduction" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 2 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 3: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/M9aYfz7Ixdc"
+                          title="Part 3: Early Life" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 3 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 4: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/JKeqUkaLnLM"
+                          title="Part 4: Exile" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 4 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 5: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/jFVVQjx3ECs"
+                          title="Part 5: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 5 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 6: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/NDwKGnZiWaM"
+                          title="Part 6: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 6 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 7: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/1XzuDN-inHE"
+                          title="Part 7: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 7 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 8: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/aAXNMUFyo2Q"
+                          title="Part 8: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 8 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 9: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe class="realted-parts" width="583" height="230" src="https://www.youtube.com/embed/sie2I7RDk_g"
+                          title="Part 9: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h5 class="mb-1">|| Day- 9 || Shri Ram Katha || Acharya Shri Krishnadas ji Maharaj || Nagpur
+                        </h5>
+                        <p class="text-muted mb-0">
+                          श्री राम कथा का आयोजन आचार्य श्री कृष्ण दास जी महाराज के श्री मुख से, 24 दिसंबर 2023 से 1
+                          जनवरी 2024 तक, हर दिन दोपहर 2:00 बजे से 5:00 बजे तक, हनुमान मंदिर प्रांगण, नागपुर में। आगामी
+                          कथाओं के लिए महाराज जी के यूट्यूब चैनल को सब्सक्राइब और लाइक करें। संपर्क: 9897619231,
+                          7983887273।
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bhagwat Katha Modal -->
+      <div class="modal fade" id="bhagwatKathaModal" tabindex="-1" aria-labelledby="bhagwatKathaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center text-white" id="bhagwatKathaModalLabel">Bhagwat Katha</h5>
+              <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-youtube-section">
+              <div class="row g-4">
+                <!-- Video Column -->
+                <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/bwNWyYgfDzQ?autoplay=1&mute=1"
+                      title="Bhagwat Katha Video" allowfullscreen></iframe>
+
+                  </div>
+                  <div class="video-description mt-3">
+                    <h5 class="mb-1">|| Day- 1 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                      Dwarika
+                    </h5>
+                    <p>
+                      जय श्री राधे 🙏🙏आप देख रहे हैं आचार्य श्री कृष्ण दास जी महाराज जी के मुखारबिंदु से श्रीमद्
+                      भागवत
+                      कथा का सीधा लाइव प्रसारण || दिनांक:- 26 सितम्बर से 2 अक्टूबर 2024 तक || कथा : प्रतिदिन दोप. 02
+                      बजे
+                      से सायं 06 बजे तक || स्थल:–श्री अबोटी ब्राह्मण ज्ञाति वाडी नं. १ त्र. ककलस कुंड, इनसाइड इस्कॉन
+                      गेट, द्वारका (361335) || अपने गांव व शहर में कथा करवाने हेतु एवं अधिक जानकारी के लिए संपर्क करें
+                      सूत्र–9897619231,7983887273 || हमारे परिवार से जुड़ने के लिए हमारे YouTube Channel:–Aacharya
+                      Krishnadas official सब्सक्राइब करें और बन जाए हमारे परिवार के सदस्य धन्यवाद🙏🙏
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Related Parts Column -->
+                <div class="col-12 col-lg-5">
+                  <ul class="list-group">
+                    <!-- Part 2 -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/7Lnuv5X5K8c"
+                          title="Part 2: Introduction" frameborder="0" allowfullscreen></iframe>
+
+
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day 2 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Dwarika</h6>
+                        <p class="text-muted mb-0">जय श्री राधे 🙏🙏 जय श्री राधे... आप देख रहे हैं आचार्य श्री कृष्ण
+                          दास जी महाराज के मुखारबिंदु से श्रीमद् भागवत कथा का सीधा प्रसारण। दिनांक: 26 सितम्बर - 2
+                          अक्टूबर 2024 | कथा: प्रतिदिन 02:00 PM - 06:00 PM | स्थल: श्री अबोटी ब्राह्मण ज्ञाति वाडी नं.
+                          १
+                          त्र. ककलस कुंड, इस्कॉन गेट, द्वारका (361335) | अधिक जानकारी व कथा हेतु संपर्क: 9897619231,
+                          7983887273 | YouTube Channel: Aacharya Krishnadas official</p>
+                      </div>
+                    </li>
+
+                    <!-- Part 3 -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="http://www.youtube.com/embed/HfA8kTi7-VM"
+                          title="Part 2: Introduction" frameborder="0" allowfullscreen></iframe>
+                      </div>
+
+
+
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day 3 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Dwarika</h6>
+                        <p class="text-muted mb-0">जय श्री राधे 🙏🙏 जय श्री राधे... आप देख रहे हैं आचार्य श्री कृष्ण
+                          दास जी महाराज के मुखारबिंदु से श्रीमद् भागवत कथा का सीधा प्रसारण। दिनांक: 26 सितम्बर - 2
+                          अक्टूबर 2024 | कथा: प्रतिदिन 02:00 PM - 06:00 PM | स्थल: श्री अबोटी ब्राह्मण ज्ञाति वाडी नं.
+                          १
+                          त्र. ककलस कुंड, इस्कॉन गेट, द्वारका (361335) | अधिक जानकारी व कथा हेतु संपर्क: 9897619231,
+                          7983887273 | YouTube Channel: Aacharya Krishnadas official</p>
+                      </div>
+                    </li>
+
+                    <!-- Part 4 -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/jO2DnoI3L8w"
+                          title="Part 4: Exile" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day 4 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Dwarika</h6>
+                        <p class="text-muted mb-0">जय श्री राधे 🙏🙏 जय श्री राधे... आप देख रहे हैं आचार्य श्री कृष्ण
+                          दास जी महाराज के मुखारबिंदु से श्रीमद् भागवत कथा का सीधा प्रसारण। दिनांक: 26 सितम्बर - 2
+                          अक्टूबर 2024 | कथा: प्रतिदिन 02:00 PM - 06:00 PM | स्थल: श्री अबोटी ब्राह्मण ज्ञाति वाडी नं.
+                          १
+                          त्र. ककलस कुंड, इस्कॉन गेट, द्वारका (361335) | अधिक जानकारी व कथा हेतु संपर्क: 9897619231,
+                          7983887273 | YouTube Channel: Aacharya Krishnadas official</p>
+                      </div>
+                    </li>
+
+                    <!--part 5 -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/CEu_G-D3c2g"
+                          title="Part 5: Return to Ayodhya" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day 5 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Dwarika</h6>
+                        <p class="text-muted mb-0">जय श्री राधे 🙏🙏 जय श्री राधे... आप देख रहे हैं आचार्य श्री कृष्ण
+                          दास जी महाराज के मुखारबिंदु से श्रीमद् भागवत कथा का सीधा प्रसारण। दिनांक: 26 सितम्बर - 2
+                          अक्टूबर 2024 | कथा: प्रतिदिन 02:00 PM - 06:00 PM | स्थल: श्री अबोटी ब्राह्मण ज्ञाति वाडी नं.
+                          १
+                          त्र. ककलस कुंड, इस्कॉन गेट, द्वारका (361335) | अधिक जानकारी व कथा हेतु संपर्क: 9897619231,
+                          7983887273 | YouTube Channel: Aacharya Krishnadas official</p>
+                      </div>
+                    </li>
+
+                    <!--part 6 -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/Evuid2qaa0Q"
+                          title="Part 6: Return to Ayodhya" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day 6 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Dwarika</h6>
+                        <p class="text-muted mb-0">जय श्री राधे 🙏🙏 जय श्री राधे... आप देख रहे हैं आचार्य श्री कृष्ण
+                          दास जी महाराज के मुखारबिंदु से श्रीमद् भागवत कथा का सीधा प्रसारण। दिनांक: 26 सितम्बर - 2
+                          अक्टूबर 2024 | कथा: प्रतिदिन 02:00 PM - 06:00 PM | स्थल: श्री अबोटी ब्राह्मण ज्ञाति वाडी नं.
+                          १
+                          त्र. ककलस कुंड, इस्कॉन गेट, द्वारका (361335) | अधिक जानकारी व कथा हेतु संपर्क: 9897619231,
+                          7983887273 | YouTube Channel: Aacharya Krishnadas official</p>
+                      </div>
+                    </li>
+
+                    <!--part 7 -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/ZtJxDQrzmWc"
+                          title="Part 7: Return to Ayodhya" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day 7 || Shrimad Bhagwat Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Dwarika</h6>
+                        <p class="text-muted mb-0">जय श्री राधे 🙏🙏 जय श्री राधे... आप देख रहे हैं आचार्य श्री कृष्ण
+                          दास जी महाराज के मुखारबिंदु से श्रीमद् भागवत कथा का सीधा प्रसारण। दिनांक: 26 सितम्बर - 2
+                          अक्टूबर 2024 | कथा: प्रतिदिन 02:00 PM - 06:00 PM | स्थल: श्री अबोटी ब्राह्मण ज्ञाति वाडी नं.
+                          १
+                          त्र. ककलस कुंड, इस्कॉन गेट, द्वारका (361335) | अधिक जानकारी व कथा हेतु संपर्क: 9897619231,
+                          7983887273 | YouTube Channel: Aacharya Krishnadas official</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Shiv Puran Modal -->
+      <div class="modal fade" id="shivPuranModal" tabindex="-1" aria-labelledby="shivPuranModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center text-white" id="shivPuranModalLabel">Shiv Puran</h5>
+              <button type="button" class="btn-close btn-close-white me-3" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-youtube-section">
+              <div class="row g-4">
+                <!-- Video Column -->
+                <!-- Part 1: Video with title and description -->
+                <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+                  <div class="ratio ratio-16x9">
+                    <!-- Updated YouTube link with autoplay and mute parameters -->
+                    <iframe src="https://www.youtube.com/embed/Ajk0wn662uQ?autoplay=1&mute=1"
+                      title="Shiv Mahapuran Katha" allowfullscreen></iframe>
+                  </div>
+                  <div class="video-description mt-3">
+                    <h5 class="mb-1">|| Day- 1 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj ||
+                      Vrindavan</h5>
+                    <p class="text-muted mb-0">
+                      || ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव प्रसारण कथा व्यास: भागवतोपासक परम
+                      श्रदेव आचार्य श्री कृष्णदास जी महाराज ( वृंदावन ) , विशाल 51000 रुद्राक्षों के द्वारा शिवलिंग
+                      निर्माण नित्य महारुद्राभिषेक का दिव्य प्रसारण दिनांक -11 से 19 फरवरी 2023 पर्यन्त कथा समय सायं
+                      2:00 से 6:00 बजे संपर्क सूत्र : +91 9897619231 +91 7983887273
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Related Parts Column -->
+                <div class="col-12 col-lg-5">
+                  <ul class="list-group">
+                    <!-- Part 2: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/yo4Ugl2c5tI"
+                          title="Part 2: Introduction" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day-2 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj
+                          ||
+                          Vrindavan </h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273। </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 3: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/gt5oIZHIYDc"
+                          title="Part 3: Early Life" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day-3 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj
+                          ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 4: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/Xdbq7tWNigw"
+                          title="Part 4: Exile" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day-4 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj
+                          ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 5: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/d1fyEW2BYV0"
+                          title="Part 5: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">|| Day-5 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj
+                          ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 6: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/IVC607juEas"
+                          title="Part 6: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">Day-6 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0"> || ॐ नमः शिवाय ||आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 7: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/cPYl3685KPw"
+                          title="Part 7: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">Day-7 ||Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 8: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/wzrUC091X6c"
+                          title="Part 8: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">Day-8 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+
+                    <!-- Part 9: Video with title and description -->
+                    <li class="list-group-item d-flex align-items-start">
+                      <div class="video-thumbnail flex-shrink-0 me-3">
+                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/vwj3kemnRLo"
+                          title="Part 9: Return to Ayodhya" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="video-info">
+                        <h6 class="mb-1">Day-9 || Shri Shiv Mahapuran Katha || Acharya Shri Krishnadas ji Maharaj ||
+                          Vrindavan</h6>
+                        <p class="text-muted mb-0">|| ॐ नमः शिवाय || आप देख रहे हैं श्री शिव महापुराण कथा का लाइव
+                          प्रसारण, कथा व्यास: आचार्य श्री कृष्णदास जी महाराज (वृंदावन), विशाल 51000 रुद्राक्षों से
+                          शिवलिंग निर्माण और महारुद्राभिषेक। कथा समय: 11-19 फरवरी 2023, सायं 2:00-6:00 बजे। संपर्क:
+                          +91
+                          9897619231, +91 7983887273।
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Video Section -->
+    <h2 id="upcoming-ashram-events" class="text-warning text-center my-4" style="font-size: 1.5rem;"> Maharaj Ji ka Sandesh</h2>
+    <hr style="border: 1px solid #ffffff;">
+
+    <section class="video-section container text-center mb-4">
+      <div class="custom-ratio mt-3">
+        <iframe src="https://www.youtube.com/embed/5u_l-wTA11U?si=t79MWRDjGXq_k8ZZ" title="YouTube video"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+
+   <!-- Profile Section -->
+<h2 id="upcoming-ashram-events" class="text-warning text-center mb-4" style="font-size: 1.5rem;">
+  Acharya Shri Krishna Das Ji Maharaj's Profile
+</h2>
+<hr style="border: 1px solid #ffffff;">
+<section class="container my-3" id="profile">
+  <div class="card profile-card text-white shadow p-4">
+    <div class="row g-3 align-items-center">
+      <!-- Image Section -->
+      <div class="col-md-5 text-center">
+        <img src="assets/imgs/profile/maharaj.png" alt="Maharaj Ji" class="img-fluid rounded">
+      </div>
+
+    <!-- Contact Details Section -->
+<div class="col-md-7 contact-profile-details">
+  <h3 class="text-danger custom-icon">Acharya Shri Krishna Das Ji Maharaj</h3>
+  
+  <!-- Phone with Tooltip -->
+  <p class="mb-2">
+    <a href="tel:+917983887273" class="text-dark text-decoration-none" 
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+      <i class="fas fa-phone custom-icon"></i> +91-7983887273
+    </a>
+  </p>
+  
+  <!-- Email with Tooltip -->
+  <p class="mb-2">
+    <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+      <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+    </a>
+  </p>
+  
+  <!-- Address with Tooltip -->
+  <p>
+    <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+      target="_blank" class="text-dark text-decoration-none" 
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+      <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram, Taras Mandir Bagichi, <br>
+      Near Ramakrishna Mission, Vrindavan, Uttar Pradesh - 281121
+    </a>
+  </p>
+</div>
+
+
+    <!-- Biography Section
+    <div class="row">
+      <div class="col-12">
+        <h4 class="text-danger text-center custom-icon">Biography and Teachings</h4>
+        <hr style="border: 1px solid #1f0003;">
+        <p class="text-dark">
+          Acharya Shri Krishna Das Ji Maharaj is a well-known speaker of stories from the Shrimad Bhagwat, Ram Katha,
+          Shiv Puran, and other sacred texts. He resides in Shri Krishna Shrayashray Ashram in Vrindavan and has been
+          sharing the teachings of the Shrimad Bhagwat for the past nineteen years. His spiritual discourses have
+          reached almost every region of India, including Nagpur, Maharashtra, Punjab, Mumbai, Gujarat, Delhi,
+          Ahmedabad, Gwalior, Kolkata, Guwahati, Bengaluru, Jharkhand, and more.
+        </p>
+        <p class="text-dark">
+          Maharaj Ji's teachings are not a profession or business but rather a spiritual tradition. As a Brahmin, he
+          believes it is a Brahmin's duty to praise and honor God. His discourses are aimed at filling listeners'
+          hearts with devotion, without any profit motive. No donations are solicited during his sessions, and there
+          are no requests for contributions related to cows, the ashram, or students. The focus is purely on sharing
+          spiritual stories.
+        </p>
+        <p class="text-dark">
+          Maharaj Ji established the Shri Krishna Shrayashray Ashram, which provides services such as cow care, support
+          for Brahmins and sages, and free lodging and meals for guests. Although donations are respectfully accepted,
+          they are not required.
+        </p>
+        <p class="text-dark">
+          The ashram celebrates three main festivals each year: Shri Ram Janmotsav (celebrating Lord Ram's birth),
+          Shri Krishna Janmashtami (celebrating Lord Krishna's birth), and a Holi gathering. During the holy month of
+          Shravan, there is a daily Rudrabhishek (a ritual honoring Lord Shiva) with sacred flowers, and every year
+          during Sharadiya Navratri, a grand Chandi Yajna ritual is held.
+        </p>
+      </div>
+    </div> -->
+<!-- Biography Section -->
+<div class="row">
+  <div class="col-12">
+    <h4 class="text-danger text-center custom-icon">Biography and Teachings</h4>
+    <hr style="border: 1px solid #1f0003;">
+  </div>
+
+  <!-- Left Column -->
+  <div class="col-md-6">
+    <h5 class="text-dark">Teachings and Philosophy</h5>
+    <p class="text-dark text-justify">
+      Acharya Shri Krishna Das Ji Maharaj is a well-known speaker of stories from the Shrimad Bhagwat, Ram Katha,
+      Shiv Puran, and other sacred texts. He resides in Shri Krishna Shrayashray Ashram in Vrindavan and has been
+      sharing the teachings of the Shrimad Bhagwat for the past nineteen years. His spiritual discourses have
+      reached almost every region of India, including Nagpur, Maharashtra, Punjab, Mumbai, Gujarat, Delhi,
+      Ahmedabad, Gwalior, Kolkata, Guwahati, Bengaluru, Jharkhand, and more.
+    </p>
+    <p class="text-dark text-justify">
+      Maharaj Ji's teachings are not a profession or business but rather a spiritual tradition. As a Brahmin, he
+      believes it is a Brahmin's duty to praise and honor God. His discourses are aimed at filling listeners'
+      hearts with devotion, without any profit motive. No donations are solicited during his sessions, and there
+      are no requests for contributions related to cows, the ashram, or students. The focus is purely on sharing
+      spiritual stories.
+    </p>
+  </div>
+
+  <!-- Right Column -->
+  <div class="col-md-6">
+    <h5 class="text-dark">Ashram Activities and Celebrations</h5>
+    <p class="text-dark text-justify">
+      Maharaj Ji established the Shri Krishna Shrayashray Ashram, which provides services such as cow care, support
+      for Brahmins and sages, and free lodging and meals for guests. Although donations are respectfully accepted,
+      they are not required.
+    </p>
+    <p class="text-dark text-justify">
+      The ashram celebrates three main festivals each year: Shri Ram Janmotsav (celebrating Lord Ram's birth),
+      Shri Krishna Janmashtami (celebrating Lord Krishna's birth), and a Holi gathering. During the holy month of
+      Shravan, there is a daily Rudrabhishek (a ritual honoring Lord Shiva) with sacred flowers, and every year
+      during Sharadiya Navratri, a grand Chandi Yajna ritual is held.
+    </p>
+  </div>
+</div>
+
+      
+      
+</section>
+
+
+
+
+
+    <!-- Katha Schedule -->
+    <h2 id="upcoming-ashram-events" class="text-warning text-center my-4" style="font-size: 1.5rem;">9 Day`s Katha Schedule
+    </h2>
+    <hr style="border: 1px solid #ffffff;">
+    <section class="katha-booking-section container rounded" id="katha-booking">
+      <div class="row mt-3 d-flex align-items-stretch">
+        <!-- Left: Buttons -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center my-4">
+          <h3 class="text-center text-white mb-4 fs-1"
+            style="background: #ff6600; padding: 10px 28px; border-radius: 8px; font-size:1.1rem !important;">
+            Choose a Katha
+          </h3>
+          <div class="d-flex flex-column gap-3">
+            <button class="btn btn-danger w-100" onclick="openScheduleModal('bhagwatKathaSchedule')"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view Shrimad Bhagwat Katha schedule">
+      Shrimad Bhagwat Katha
+    </button>
+    
+    <button class="btn btn-danger w-100" onclick="openScheduleModal('shivPuranSchedule')"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view Shiv Mahapuran Katha schedule">
+      Shiv Mahapuran Katha
+    </button>
+    
+    <button class="btn btn-danger w-100" onclick="openScheduleModal('ramKathaSchedule')"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view Shri Ram Katha schedule">
+      Shri Ram Katha
+    </button>
+    
+          </div>
+        </div>
+
+        <!-- Right: Carousel -->
+        <!-- Right: Carousel -->
+        <!-- Right: Carousel -->
+        <div class="col-md-5 d-flex mb-5">
+          <div id="carouselExampleIndicators" class="carousel index-page slide w-100" data-bs-ride="carousel"
+            data-bs-interval="6000" data-bs-pause="false">
+            <div class="carousel-inner mt-4">
+              <div class="carousel-item active">
+                <img src="assets/imgs/schedule-modal/katha-booking1.png" class="d-block img-fluid w-100"
+                  alt="Katha Booking">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/schedule-modal/krishna1.png" class="d-block img-fluid w-100" alt="Bhagwat Katha">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/schedule-modal/ram1.png" class="d-block img-fluid w-100" alt="Ram Katha">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/schedule-modal/shiv1.png" class="d-block img-fluid w-100" alt="Shiv Katha">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-- Modal Structure -->
+      <div id="kathaScheduleModal" class="modal-schedule">
+        <div class="modal-schedule-content">
+          <button class="btn btn-danger close-booking-button" onclick="closeScheduleModal()">Close</button>
+          <img id="scheduleModalImage" src="" alt="Katha Schedule Image" class="modal-schedule-image w-100">
+          <h2 class="modal-schedule-header" id="scheduleModalTitle"></h2>
+          <p class="modal-schedule-info" id="scheduleModalInfo"></p>
+          <ul class="topics-schedule-list" id="scheduleModalTopics"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kaths Event Section -->
+    <h2 id="upcoming-ashram-events event" class="text-warning text-center my-4" style="font-size: 1.5rem;"> Upcoming Kathas Events </h2>
+    <hr style="border: 1px solid #ffffff;">
+    <section class="event-section container rounded">
+      <div id="upcoming-event" class="container" style="background-color: #f763001e;">
+        <div id="carouselEvents1" class="carousel slide w-100 p-3" data-bs-ride="carousel" data-bs-interval="9000"
+          data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-lg-6 col-sm-12">
+                  <div class="event-card">
+                    <img src="assets/imgs/schedule-modal/katha-booking1.png" height="300" alt="Event 1 Image">
+                    <!-- <div class="event-card-content">
+                    <h3 class="event-card-title text-white">Event Title 1</h3>
+                    <p class="text-white"><strong>Date:</strong> November 20, 2024</p>
+                    <p class="text-white"><strong>Location:</strong> Jaipur, Rajasthan</p>
+                    <a href="#" class="btn btn-danger">Read More</a>
+                  </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                  <div class="contact-details p-3 w-100 text-center mt-1">
+                    <h2 class="text-danger mb-2 custom-icon" style="font-size: 1.5rem;">Contact for Katha Booking</h2>
+                    <hr style="border: 1px solid #1f0003 !important;width: 60% !important; margin: 10px auto !important;">
+                    <div class="contact-info">
+<!-- Phone -->
+<span class="text-white mb-1">
+  <a href="tel:+917983887273" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-phone custom-icon"></i> +91-7983887273
+  </a>
+</span>
+<br>
+
+<!-- Email -->
+<span class="text-white mb-1">
+  <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+  </a>
+</span>
+<br>
+
+<!-- Address -->
+<p class="text-white">
+  <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+    target="_blank" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+    <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram,
+    Taras Mandir Bagichi, <br> Near Ramakrishna Mission,
+    Vrindavan, Uttar Pradesh - 281121
+  </a>
+</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-lg-6 col-sm-12">
+                  <div class="event-card">
+                    <img src="assets/imgs/schedule-modal/krishna1.png" height="300" alt="Event 1 Image">
+                    <!-- <div class="event-card-content">
+                    <h3 class="event-card-title text-white">Event Title 1</h3>
+                    <p class="text-white"><strong>Date:</strong> November 20, 2024</p>
+                    <p class="text-white"><strong>Location:</strong> Jaipur, Rajasthan</p>
+                    <a href="#" class="btn btn-danger">Read More</a>
+                  </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                  <div class="contact-details p-3 w-100 text-center mt-1">
+                    <h2 class="text-danger mb-2 custom-icon" style="font-size: 1.5rem;">Contact for Katha Booking</h2>
+                    <hr style="border: 1px solid #1f0003 !important;width: 60% !important; margin: 10px auto !important;">
+                    <div class="contact-info">
+                      <!-- Phone -->
+                 <!-- Phone -->
+<span class="text-white mb-1">
+  <a href="tel:+917983887273" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-phone custom-icon"></i> +91-7983887273
+  </a>
+</span>
+<br>
+
+<!-- Email -->
+<span class="text-white mb-1">
+  <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+  </a>
+</span>
+<br>
+
+<!-- Address -->
+<p class="text-white">
+  <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+    target="_blank" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+    <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram,
+    Taras Mandir Bagichi, <br> Near Ramakrishna Mission,
+    Vrindavan, Uttar Pradesh - 281121
+  </a>
+</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-lg-6 col-sm-12">
+                  <div class="event-card">
+                    <img src="assets/imgs/schedule-modal/ram1.png" height="300" alt="Event 1 Image">
+                    <!-- <div class="event-card-content">
+                    <h3 class="event-card-title text-white">Event Title 1</h3>
+                    <p class="text-white"><strong>Date:</strong> November 20, 2024</p>
+                    <p class="text-white"><strong>Location:</strong> Jaipur, Rajasthan</p>
+                    <a href="#" class="btn btn-danger">Read More</a>
+                  </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                  <div class="contact-details p-3 w-100 text-center mt-1">
+                    <h2 class="text-danger mb-2 custom-icon" style="font-size: 1.5rem;">Contact for Katha Booking</h2>
+                    <hr style="border: 1px solid #1f0003 !important;width: 60% !important; margin: 10px auto !important;">
+                    <div class="contact-info">
+                      <!-- Phone -->
+                      <!-- Phone -->
+<span class="text-white mb-1">
+  <a href="tel:+917983887273" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-phone custom-icon"></i> +91-7983887273
+  </a>
+</span>
+<br>
+
+<!-- Email -->
+<span class="text-white mb-1">
+  <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+  </a>
+</span>
+<br>
+
+<!-- Address -->
+<p class="text-white">
+  <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+    target="_blank" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+    <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram,
+    Taras Mandir Bagichi, <br> Near Ramakrishna Mission,
+    Vrindavan, Uttar Pradesh - 281121
+  </a>
+</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-lg-6 col-sm-12">
+                  <div class="event-card">
+                    <img src="assets/imgs/schedule-modal/shiv1.png" height="300" alt="Event 1 Image" >
+                    <!-- <div class="event-card-content">
+                    <h3 class="event-card-title text-white">Event Title 1</h3>
+                    <p class="text-white"><strong>Date:</strong> November 20, 2024</p>
+                    <p class="text-white"><strong>Location:</strong> Jaipur, Rajasthan</p>
+                    <a href="#" class="btn btn-danger">Read More</a>
+                  </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                  <div class="contact-details p-3 w-100 text-center mt-1">
+                    <h2 class="text-danger mb-2 custom-icon" style="font-size: 1.5rem;">Contact for Katha Booking</h2>
+                    <hr style="border: 1px solid #1f0003 !important;width: 60% !important; margin: 10px auto !important;">
+                    <div class="contact-info">
+                     <!-- Phone -->
+<span class="text-white mb-1">
+  <a href="tel:+917983887273" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-phone custom-icon"></i> +91-7983887273
+  </a>
+</span>
+<br>
+
+<!-- Email -->
+<span class="text-white mb-1">
+  <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+  </a>
+</span>
+<br>
+
+<!-- Address -->
+<p class="text-white">
+  <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+    target="_blank" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+    <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram,
+    Taras Mandir Bagichi, <br> Near Ramakrishna Mission,
+    Vrindavan, Uttar Pradesh - 281121
+  </a>
+</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="mt-2 btn btn-danger event-prev px-5" style="height: 10%; width: fit-content;" type="button"
+          data-bs-target="#carouselEvents1" data-bs-slide="prev"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Go to the previous event">
+    Prev
+  </button>
+  
+  <button class="mt-2 btn btn-danger event-next px-5" style="height: 10%; width: fit-content;" type="button"
+          data-bs-target="#carouselEvents1" data-bs-slide="next"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Go to the next event">
+    Next
+  </button>
+  
+  <button class="mt-2 btn btn-danger px-5" id="btn-upcoming-events" style="height: 10%; width: fit-content;" type="button"
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see more upcoming events">
+    Click for More Upcoming Events
+  </button>
+  
+          
+        </div>
+        <!-- <div class="row"> -->
+
+
+        <!-- <div class="col-md-4 mb-4">
+          <div class="event-card">
+            <img src="assets/imgs/schedule-modal/ram.png" alt="Event 1 Image">
+            <div class="event-card-content">
+              <h3 class="event-card-title text-white">Event Title 1</h3>
+              <p class="text-white"><strong>Date:</strong> November 20, 2024</p>
+              <p class="text-white"><strong>Location:</strong> Jaipur, Rajasthan</p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+       <div class="col-md-4 mb-4">
+          <div class="event-card">
+            <img src="assets/imgs/schedule-modal/krishna.png" alt="Event 2 Image">
+            <div class="event-card-content">
+              <h3 class="event-card-title text-white">Event Title 2</h3>
+              <p class="text-white"><strong>Date:</strong> December 15, 2024</p>
+              <p class="text-white"><strong>Location:</strong> Mumbai, Maharashtra</p>
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4 mb-4">
+          <div class="event-card">
+            <img src="assets/imgs/schedule-modal/shiv.png" alt="Event 3 Image">
+            <div class="event-card-content">
+              <h3 class="event-card-title text-white">Event Title 3</h3>
+              <p class="text-white"><strong>Date:</strong> January 10, 2025</p>
+              <p class="text-white"><strong>Location:</strong> Delhi, India</p>
+              <a href="#" class="btn btn-danger btn-view-more">Read More</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="container section-tb-padding text-widget py-5" id="upcoming-events"
+      style="    background-image:radial-gradient(circle, rgb(118 0 0), rgb(149 104 0) 100%, transparent 100%);
+ display: none;">
+      <div class="table-responsive" id="event" style="max-height: 400px; overflow-y: auto;">
+        <table class="table table-striped table-hover table-bordered text-center"
+          style="position: relative; width: 100%;">
+          <thead class="table-dark" style="position: sticky; top: 0; z-index: 10;">
+            <tr>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Event</th>
+              <th scope="col">Place</th>
+              <th scope="col">Organizer</th>
+            </tr>
+          </thead>
+          <tbody style="max-height: 400px;">
+            <tr>
+              <td>7 December <br>2024</td>
+              <td>14 December <br>2024</td>
+              <td>Afternoon 1:00 PM To 04 PM</td>
+              <td>Shrimad Bhagwat Katha</td>
+              <td>Ghazipur Amethi (U.P.)</td>
+              <td>Shrimati Pushpa Singh & Satyanarayan Singh</td>
+            </tr>
+            <tr>
+              <td>16 December <br>2024</td>
+              <td>20 December <br>2024</td>
+              <td>Afternoon 1:00 PM To 04 PM</td>
+              <td>Shri Shiv Mahapuran Katha</td>
+              <td>Maharana Pratap Resort, <br> Dhamtari Chhattisgarh</td>
+              <td>Rajput Family</td>
+            </tr>
+            <tr>
+              <td>27 February <br>2025</td>
+              <td>05 March <br>2025</td>
+              <td>Morning 9:00 AM To 01 PM <br> Afternoon 03 PM To 06 PM</td>
+              <td>Shrimad Bhagwat Katha &<br>Holi-Milan Utsav</td>
+              <td>Shri Krishna Shryashray Ashram, <br> Vrindavan (U.P.)</td>
+              <td>Shri Krishan Seva Samiti</td>
+            </tr>
+            <tr>
+              <td>7 March <br>2025</td>
+              <td>13 March <br>2025</td>
+              <td>Morning 9:00 AM To 01 PM <br> Afternoon 03 PM To 06 PM</td>
+              <td>Shrimad Bhagwat Katha &<br>Braj Holi - Utsav</td>
+              <td>Gokuldham, Falodi</td>
+              <td>Shri Krishan Seva Samiti</td>
+            </tr>
+            <!-- Add more rows here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
+    <!-- Asharm Booking -->
+    <h2 id="upcoming-ashram-events" class=" text-warning text-center my-4" style="font-size: 1.5rem;">Ashram Room Booking</h2>
+    <hr style="border: 1px solid #ffffff;">
+    <section id="ashram-booking-section" class="ashram-booking-section  container mb-4 mt-3">
+      <div class="row mt-4 d-flex align-items-stretch ">
+        <!-- Left: Image Slider -->
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div id="ashramImageSlider" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#ashramImageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#ashramImageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#ashramImageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#ashramImageSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/imgs/rooms-images/asharm-images/img-1.jpeg" class="d-block w-100" alt="Ashram Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ashram Outdoor</h5>
+                  <p>Description for Ashram Image 1</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/rooms-images/asharm-images/img-3.jpeg" class="d-block w-100" alt="Ashram Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ashram Indoor</h5>
+                  <p>Description for Ashram Image 2</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/rooms-images/Ac-deluxe-room/img-1.jpeg" class="d-block w-100" alt="Ashram Image 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Room</h5>
+                  <p>Air-conditioned rooms for a comfortable and serene stay.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/rooms-images/Ac-deluxe-room/img-2.jpeg" class="d-block w-100" alt="Ashram Image 4">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Room</h5>
+                  <p>Air-conditioned rooms for a comfortable and serene stay.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Right: Room Details -->
+        <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-between">
+          <!-- Room Details Header -->
+          <div>
+            <h3 class="text-white mb-4 text-center"
+              style="background: #5c2906; padding: 10px; border-radius: 5px; font-size: 1.2rem !important;">
+              Room Types and Features
+            </h3>
+          </div>
+          <div class="row flex-grow-1">
+            <!-- Non-AC Room Card -->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center mb-4 non-ac-card">
+              <div class="room-feature-card p-2 text-center w-100" style="border-radius: 10px;">
+                <h4 class="text-danger mb-2 custom-icon" style="font-size: 1.1rem !important;">Air Cooled Room</h4>
+                <p class="text-dark">Simple and peaceful rooms designed for spiritual seekers.</p>
+                <ul class="list-unstyled" style="font-size: 0.9rem;">
+                  <li class="text-dark">✔ Comfortable Bedding</li>
+                  <li class="text-dark">✔ Natural Ventilation</li>
+                  <li class="text-dark">✔ Budget Friendly</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- AC Room Card -->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center mb-4 ac-card">
+              <div class="room-feature-card p-2 text-center w-100" style="border-radius: 10px;">
+                <h4 class="text-danger mb-2 custom-icon" style="font-size: 1.1rem !important;">AC Deluxe Room</h4>
+                <p class="text-dark">Air-conditioned rooms for a comfortable and serene stay.</p>
+                <ul class="list-unstyled" style="font-size: 0.9rem;">
+                  <li class="text-dark">✔ Comfortable Bedding</li>
+                  <li class="text-dark">✔ Calm and Quiet Ambience</li>
+                  <li class="text-dark">✔ Ideal for Summer Seasons</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-6 col-sm-12 contact-details p-2 w-100 text-center mt-2" style="background-image: radial-gradient(circle at center, #ffffff -100%, #ffa200 100%, transparent 100%);border-radius: 10px;">
+            <h5 class="text-danger mb-2 custom-icon" style="font-size: 1.1rem;">Contact for Off-line Room Booking</h5>
+            <div class="contact-info">
+             <!-- Phone -->
+<span class="text-white mb-1">
+  <a href="tel:+917983887273" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-phone custom-icon"></i> +91-7983887273
+  </a>
+</span>
+<br>
+
+<!-- Email -->
+<span class="text-white mb-1">
+  <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+    <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+  </a>
+</span>
+<br>
+
+<!-- Address -->
+<p class="text-white">
+  <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+    target="_blank" class="text-dark text-decoration-none" 
+    data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+    <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram,
+    Taras Mandir Bagichi, <br> Near Ramakrishna Mission,
+    Vrindavan, Uttar Pradesh - 281121
+  </a>
+</p>
+
+            </div>
+
+
+
+          <!-- Call to Action Buttons -->
+<div class="d-flex justify-content-center mt-4 gap-3">
+  <button class="btn btn-danger" onclick="openBookingModal()" 
+          data-bs-toggle="tooltip" data-bs-placement="top" title="Click to book your room online">
+    Online Room Booking
+  </button>
+</div>
+
+
+</div>
+            <!-- Overlay for Images -->
+            <div id="imageOverlay"
+              style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; overflow-y: auto; padding: 20px;">
+              <div class="d-flex justify-content-end">
+                <button onclick="closeOverlay()" class="btn btn-danger mb-3">Close</button>
+              </div>
+              <div id="overlay-images" class="d-flex flex-wrap gap-3 justify-content-center">
+                <!-- Dynamically loaded images will appear here -->
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Modal Structure -->
+          <div id="ashramBookingModal" class="booking-modal ">
+            <div class="booking-modal-content">
+              <button class=" btn btn-danger close-booking-button" onclick="closeBookingModal()">Close</button>
+
+              <!-- Modal Content -->
+              <h3>Book Your Room on These Platforms</h3>
+              <div class="platforms-list">
+                <!-- Goibibo -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/goibibo-logo.png" alt="Goibibo" class="platform-logo">
+                  <a href="https://www.goibibo.com/hotels/shri-krishna-shryaashrya-aashram-hotel-in-vrindavan-5261303134935215712/?hquery={%22ci%22:%2220241117%22,%22co%22:%2220241118%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN&vcid=5261303134935215712&locusId=CTVRIN&locusType=city&cityCode=CTVRIN&mmtId=202409242142083111&FS=GSU&city=Vrindavan"
+                    target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Makemytrip -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/Make-My-Trip-Logo-Vector.png" alt="MakeMyTrip"
+                    class="platform-logo">
+                  <a href="https://www.makemytrip.com/hotels/hotel-details?hotelId=202409242142083111&_uCurrency=INR&checkin=11132024&checkout=12092024&city=CTVRIN&country=IN&lat=27.56962&lng=77.69547&locusId=CTVRIN&locusType=city&rank=1&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Shri%20Krishna%20Shryaashrya%20Aashram&topHtlId=202409242142083111&mtkeys=6241861058850681519"
+                    target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Expedia -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/expedia-logo.png" alt="Expedia" class="platform-logo">
+                  <a href="https://www.expedia.co.in/Mathura-Hotels-SHRI-KRISHNA-SHRYAASHRYA-ASHRAM.h109855022.Hotel-Information?chkin=2024-11-12&chkout=2024-11-18&x_pwa=1&rfrr=HSR&pwa_ts=1731321997103&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=6136964&destination=Mathura%2C+Uttar+Pradesh%2C+India&destType=MARKET&selected=109855022&latLong=27.570318%2C77.69441&sort=RECOMMENDED&top_dp=1000&top_cur=INR&userIntent=&selectedRoomType=325535263&selectedRatePlan=398353737&searchId=50c9e40f-3d7c-4aaf-9111-cf0e9d0df39a&propertyName=SHRI++KRISHNA+SHRYAASHRYA+ASHRAM"
+                    target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Booking.com -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/booking-logo.png" alt="Booking.com" class="platform-logo">
+                  <a href="https://www.booking.com/hotel/in/shri-krishna-shryaashrya-aashram.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaGyIAQGYATG4ARfIAQzYAQHoAQH4AQKIAgGoAgO4AoG-x7kGwAIB0gIkZjFkYWE2YmYtN2MzYi00NDA4LTk3OWUtZDczNmY1ZDk2YzM42AIF4AIB&sid=f15208d5f6e800f39d9e4e64e7e39a36&dest_id=12960791;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1731321649;srpvid=68cd4b1413ad0644;type=total;ucfs=1&"
+                    target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Easemytrip -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/easyMy-images.png" alt="EaseMyTrip" class="platform-logo">
+                  <a href="https://www.easemytrip.com" target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Via.com -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/via.jpg" alt="Via.com" class="platform-logo">
+                  <a href="https://www.via.com" target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Trip.com -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/trip.png" alt="Trip.com" class="platform-logo">
+                  <a href="https://www.trip.com" target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Hotels.com -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/hotels-com.png" alt="Hotels.com" class="platform-logo">
+                  <a href="https://www.hotels.com" target="_blank" class="booking-link">Book Now</a>
+                </div>
+
+                <!-- Ixigo -->
+                <div class="platform-item">
+                  <img src="assets/imgs/booking-platform-logo/ixigo.png" alt="Ixigo" class="platform-logo">
+                  <a href="https://www.ixigo.com" target="_blank" class="booking-link">Book Now</a>
+                </div>
+                <button type="button" class="btn-close platform-close mb-3 me-3" data-bs-dismiss="modal"
+                  aria-label="Close" onclick="closeBookingModal()"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+<!-- Gaushala Section -->
+<h2 id="upcoming-ashram-events" class="text-center mb-4 text-warning" style="font-size: 1.5rem;">Welcome to Our Gaushala</h2>
+<hr id="gaushala" class="section-divider">
+<section class="container text-center mb-4">
+  <div class="row gaushala-section align-items-center shadow-lg border-0 rounded bg-light p-3 mx-auto" style="max-width: 1100px;">
+    <!-- Left Side Content (col-5) -->
+    <div class="col-md-5 text-start">
+      <h3 class="text-danger fs-3 custom-icon text-center">Learn More</h3>
+      <hr class="custom-divider">
+      <p class="text-dark">Support our efforts by adopting a cow. Your contributions matter.</p>
+      <p class="text-dark">Help us maintain the Gaushala by donating. Jai Shree Krishna.</p>
+      <!-- Buttons -->
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-3 justify-content-center">
+        <a href="New folder/gallery.html" class="btn btn-danger" 
+           data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view Gaushala images">
+          Gaushala Images
+        </a>
+        <a href="New/donation.html" class="btn btn-danger" 
+           data-bs-toggle="tooltip" data-bs-placement="top" title="Click to donate now">
+          Donate Now
+        </a>
+      </div>
+      
+    </div>
+    <!-- Right Side Images (col-7) -->
+    <div class="col-md-7 d-flex flex-wrap justify-content-center align-items-center gap-2 gaumata-img">
+      <img src="assets/imgs/gaushala/cow.png" class="img-fluid rounded" style="max-height: 250px; width: auto;" alt="Adopt a Cow">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Full-Width Donation Modal -->
+    <!-- <div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h2 id="upcoming-ashram-events" class="text-center mb-4 w-100" style="color: #ff6600;"
+              id="donateModalLabel">Donate to Our Gaushala
+            </h2>
+            <hr style="border: 1px solid #1f0003 !important;width: 100% !important; margin: 10px auto !important;">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-image: linear-gradient(#ff6600 -100%, #262928 50%);">
+            <img src="assets/imgs/gaushala/donate/barcode.png" alt="QR Code" class="img-fluid mb-3"
+              style="width: 35%; height: 80% !important; box-shadow: 0 28px 44px 10px rgba(0, 0, 0, 0.3) !important; transition: transform 0.3s ease !important;">
+            <h3 class="text-white">Gaushala Name: <strong> Shri Krishna Shrayashray Ashram </strong></h3>
+            <h4 class="text-white"> Account Name: <strong>Shree Gaushala Trust</strong></h4>
+            <p class="text-white">Scan the barcode above to make a donation. Thank you for your support!</p>
+          </div>
+          <div class="modal-footer"
+            style="background-image: radial-gradient(circle at center, #f76100, #857a3e 100%, transparent 100%) !important;">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <h3 class="text-warning text-center my-3" style="font-size: 1.5rem;">Find Us on the Map</h3>
+
+    <section>
+      <div class="container py-5 google-map">
+        <!-- Row 1: Google Maps -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-4">
+                <h5 class="text-center">Current Location to Shri Krishnaa Sharayashry Ashram</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.400133343215!2d77.6954899!3d27.5696189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f001f109673%3A0x838bd8c62311e14b!2sTarash%20Mandir%20Colony%2C%20Vrindavan%2C%20Uttar%20Pradesh%20281121!5e0!3m2!1sen!2sin!4v1698743771918!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-center">Atalla Chungi to Shri Krishnaa Sharayashry Ashram</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.207497319774!2d77.6889276!3d27.5680801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f3df808e3fd%3A0xd23fcccb03c2ad6a!2sAtalla%20Chungi%2C%20Vrindavan%2C%20Uttar%20Pradesh%20281121!5e0!3m2!1sen!2sin!4v1698743844176!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p class=" text-dark text-center mt-3" style="font-size: 1.1rem !important;" >
+          We are located in the heart of Vrindavan. Use the map above to find Shri Krishna Shryaashrya Aashram.
+        </p>
+      </div>
+    </section>
+    
+
+    
+    
+    <!-- Row 2: Nearby Temples -->
+<!-- 
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5>Temple 1: Prem Mandir</h5>
+                    <p>Distance: 1.5 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Prem+Mandir" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 2: ISKCON Vrindavan</h5>
+                    <p>Distance: 2.0 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+ISKCON+Vrindavan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 3: Banke Bihari Temple</h5>
+                    <p>Distance: 3.0 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Banke+Bihari+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 4: Radha Raman Temple</h5>
+                    <p>Distance: 3.5 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Raman+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5>Temple 5: Shri Radha Damodar Temple</h5>
+                    <p>Distance: 4.0 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Radha+Damodar+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 6: Shri Govind Dev Ji Temple</h5>
+                    <p>Distance: 4.5 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Govind+Dev+Ji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 7: Shri Ranganath Temple</h5>
+                    <p>Distance: 5.0 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Ranganath+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 8: Rangaji Temple</h5>
+                    <p>Distance: 5.5 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Rangaji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 9: Nidhivan Temple</h5>
+                    <p>Distance: 6.0 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Nidhivan+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Temple 10: Shri Katyayani Peeth</h5>
+                    <p>Distance: 6.5 km</p>
+                    <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Katyayani+Peeth" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+    
+<!-- 
+   <div class="row">
+        <div class="col-md-6">
+            <h5>Temple 1: Prem Mandir</h5>
+            <p>Distance: 1.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Prem+Mandir" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+        <div class="col-md-6">
+            <h5>Temple 2: ISKCON Vrindavan</h5>
+            <p>Distance: 2.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+ISKCON+Vrindavan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+     </div>
+    
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h5>Temple 3: Banke Bihari Temple</h5>
+            <p>Distance: 3.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Banke+Bihari+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+        <div class="col-md-6">
+            <h5>Temple 4: Radha Raman Temple</h5>
+            <p>Distance: 3.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Raman+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+    </div>
+    
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h5>Temple 5: Radha Damodar Temple</h5>
+            <p>Distance: 3.8 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Damodar+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+        <div class="col-md-6">
+            <h5>Temple 6: Nidhivan</h5>
+            <p>Distance: 4.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Nidhivan" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+    </div>
+    
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h5>Temple 7: Radha Vallabh Temple</h5>
+            <p>Distance: 4.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Vallabh+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+        <div class="col-md-6">
+            <h5>Temple 8: Shahji Temple</h5>
+            <p>Distance: 5.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shahji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+    </div>
+    
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h5>Temple 9: Keshi Ghat</h5>
+            <p>Distance: 5.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Keshi+Ghat" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+        <div class="col-md-6">
+            <h5>Temple 10: Rangji Temple</h5>
+            <p>Distance: 6.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Rangji+Temple" target="_blank" class="btn btn-outline-primary btn-sm">View on Google Maps</a>
+        </div>
+    </div> -->
+
+
+    <h3 class="text-warning text-center my-4" style="font-size: 1.5rem;">These Famous Places Are Near  Shri Krishna Shrayashray Ashram</h3>
+<section>
+  <div class="container nearby-temple py-4">
+    
+    <!-- First Column -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-lg-3">
+            <h5>Prem Mandir</h5>
+            <p>Distance: 1.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Prem+Mandir" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Prem Mandir on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>ISKCON Vrindavan</h5>
+            <p>Distance: 2.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+ISKCON+Vrindavan" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View ISKCON Vrindavan on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Banke Bihari Temple</h5>
+            <p>Distance: 3.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Banke+Bihari+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Banke Bihari Temple on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Radha Raman Temple</h5>
+            <p>Distance: 3.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Raman+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Radha Raman Temple on Google Maps">View on Google Maps</a>
+          </div>
+          <!-- Added Unique Place -->
+          <div class="col-lg-3">
+            <h5>Shri Krishna Janmabhoomi</h5>
+            <p>Distance: 13 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Krishna+Janmabhoomi" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Shri Krishna Janmabhoomi on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Radha Vallabh Temple</h5>
+            <p>Distance: 4.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Radha+Vallabh+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Radha Vallabh Temple on Google Maps">View on Google Maps</a>
+          </div>
+        </div>
+      </div>
+      <!-- Second Column -->
+      <div class="col-md-6 mb-4">
+        <div class="row">
+          <div class="col-lg-3">
+            <h5>Shri Radha Damodar Temple</h5>
+            <p>Distance: 4.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Radha+Damodar+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Shri Radha Damodar Temple on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Shri Govind Dev Ji Temple</h5>
+            <p>Distance: 4.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Govind+Dev+Ji+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Shri Govind Dev Ji Temple on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Shri Ranganath Temple</h5>
+            <p>Distance: 5.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Ranganath+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Shri Ranganath Temple on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Shri Katyayani Peeth</h5>
+            <p>Distance: 6.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Shri+Katyayani+Peeth" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Shri Katyayani Peeth on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Nidhivan Temple</h5>
+            <p>Distance: 6.0 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Nidhivan+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Nidhivan Temple on Google Maps">View on Google Maps</a>
+          </div>
+          <div class="col-lg-3">
+            <h5>Rangaji Temple</h5>
+            <p>Distance: 5.5 km</p>
+            <a href="https://www.google.com/maps/dir/Shri+Krishnaa+Ashram+to+Rangaji+Temple" target="_blank" class="custom-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="View Rangaji Temple on Google Maps">View on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</section>
+  </main>
+
+
+  <footer class="ashram-footer bg-dark text-white pt-1">
+    <div class="container my-5" id="contact">
+      <!-- Contact Us Section -->
+      <div class="row">
+        <!-- Left Side: Contact Form -->
+        <div class="col-md-12 col-lg-6 p-4 " style="background-image: radial-gradient(circle at center, #ffffff -45%, #ffa200 100%, transparent 100%);">
+          <h3 class="text-danger text-center mb-3 custom-icon">Contact Us</h3>
+          <hr style="border: 1px solid #1f0003 !important;width: 100% !important; margin: 10px auto !important;">
+          <form action="#" method="POST" class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label text-dark">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label text-dark">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label text-dark">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col-md-6">
+              <label for="kathaType" class="form-label text-dark">Katha Type</label>
+              <select class="form-select" id="kathaType" required>
+                <option value="" disabled selected>Choose Katha Type</option>
+                <option value="ram-katha">Ram Katha</option>
+                <option value="shrimad-bhagwat">Shrimad Bhagwat Katha</option>
+                <option value="shiv-mahapuran">Shiv Mahapuran Katha</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="message" class="form-label text-dark">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-danger btn-lg w-50">Submit</button>
+            </div>
+          </form>
+        </div>
+
+       <!-- Right Side: Information Content -->
+<div class="col-md-12 col-lg-6 contact-content text-white p-4">
+  <div class="info-content">
+    <h3 class="text-danger text-center custom-icon mb-3">How to Contact Maharaj Ji</h3>
+    <hr style="border: 1px solid #1f0003 !important;width: 100% !important; margin: 10px auto !important;">
+
+    <p class="text-dark">
+      Acharya Shri Krishna Das Ji Maharaj is always available for spiritual guidance. If you wish to contact
+      him for Katha (spiritual discourses), you can send an email with the subject "Katha Request" or use
+      the contact form on the left.
+    </p>
+    <p class="text-dark">
+      You can also reach out to Maharaj Ji for any other spiritual guidance, questions, or to learn more
+      about his teachings.
+    </p>
+  </div>
+
+  <!-- Phone -->
+  <span class="text-white mb-1">
+    <a href="tel:+917983887273" class="text-dark text-decoration-none" aria-label="Call Acharya Shri Krishna Das Ji Maharaj" 
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Click to call Acharya Shri Krishna Das Ji Maharaj">
+      <i class="fas fa-phone custom-icon"></i> +91-7983887273
+    </a>
+  </span>
+  <br>
+
+  <!-- Email -->
+  <span class="text-white mb-1">
+    <a href="mailto:acharykrishnadas@gmail.com" class="text-dark text-decoration-none" 
+       aria-label="Send an email to Acharya Shri Krishna Das Ji Maharaj" 
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Click to send an email to Acharya Shri Krishna Das Ji Maharaj">
+      <i class="fas fa-envelope custom-icon"></i> acharykrishnadas@gmail.com
+    </a>
+  </span>
+  <br>
+
+  <!-- Address -->
+  <p class="text-white">
+    <a href="https://www.google.com/maps?q=Shri+Krishna+Shryashray+Ashram&ll=27.5696189,77.6933013&z=16"
+       target="_blank" class="text-dark text-decoration-none" 
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view location on Google Maps">
+      <i class="fas fa-map-marker-alt custom-icon"></i> Shri Krishna Shryashray Ashram,
+      Taras Mandir Bagichi, <br> Near Ramakrishna Mission,
+      Vrindavan, Uttar Pradesh - 281121
+    </a>
+  </p>
+
+  <p class="text-dark text-center">Feel free to reach out for any inquiries or spiritual assistance. Maharaj Ji and
+    his team will respond as soon as possible.</p>
+</div>
+
+       
+      </div>
+      
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Social Media and Other Content -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h5>Follow Us</h5>
+        <div class="social-links mb-3">
+          <a href="https://www.facebook.com/updeshkrishna.shastri" target="_blank" class="mx-2 text-white"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/updeshkrishnashastri?igsh=MXQ1ZDRlbmp1ZGJzeg==" target="_blank"
+            class="mx-2 text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@acharyakrishnadasofficial7502" target="_blank" class="mx-2 text-white"
+            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Shri Krishna Shryashray Ashram. All Rights Reserved.</p>
+        <p>Website designed and developed by <a href="https://sournaksh.in/" target="_blank" style="text-decoration: none; color: inherit;"><strong>Sournaksh Buildsoft Pvt Ltd.</strong></a></p>
+      </div>
+    </div>
+  </footer>
+
+
+ <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

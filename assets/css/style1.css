@@ -1,0 +1,1363 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Iframe Styling */
+.ratio {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Image and Button Layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* List Group Styling */
+.list-group-item {
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea;
+}
+
+.video-thumbnail {
+    max-width: 220px;
+    height: auto;
+    margin-right: 15px;
+}
+
+
+
+/* style file */
+
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html, body {
+    height: 100%; /* Ensures full viewport height is available for sections */
+}
+
+body {
+    font-family: 'Poppins, Open Sans', sans-serif;
+    background-image: url('assets/imgs/schedule-modal/bg.png');
+}
+/* .booking .card {
+    min-height: 80vh; 
+} */
+.offcanvas, .ashram-footer, .hero, h1, main{
+    background-image: radial-gradient(circle at center, #f76100, #857a3e 100%, transparent 100%);
+    /* background-color: #000026; */
+}
+
+/* Modal and Image */
+.main-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-modal img{
+    position: relative;
+    height: 90%;
+    opacity: 0.9;
+    transition: all 2s;
+}
+
+/* Links and Navbar */
+.container-fluid a, .collapse ul a{
+    font-family: 'Open Sans', sans-serif;
+    font: 13px;
+    color: white;
+}
+.nav-link{
+    margin-left: 1px;
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: gold;
+}
+.contact-no:hover{
+    color: gold !important;
+}
+
+/* Donate Button */
+.btn, .btn-view-more {
+    color: white;
+    /* border: 1px solid gold; */
+    border-radius: 12px; 
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    /* background-image: linear-gradient(to right, #000000 0%, #0e0202 100%); */
+    /* background-color: #000026; */
+    margin-bottom: 1%;
+    box-shadow: 0 4px 14px rgb(0, 0, 0);
+    background-color: #740c16 !important;
+}
+.btn:hover{
+    color: gold; 
+    border: 1px solid white;
+    background-color: #b02a37;
+
+}
+
+.btn-view-more:hover {
+    color: gold; 
+    border: 1px solid white;
+    background-color: #b02a37;
+}
+
+/* Offcanvas */
+.offcanvas-body ul li a{
+    color: white;
+}
+.offcanvas-body ul li a :hover{
+    color: gold;
+}
+.btn-close:hover {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(95%) saturate(4938%) hue-rotate(356deg) brightness(105%) contrast(109%);
+}
+
+/* Fixed Button */
+.fixed-container {
+    position: fixed;
+    bottom: 20px;
+    left:20px;
+    text-align: center;
+    z-index: 3;
+}
+.fixed-image {
+    width: 100px; 
+    height: auto;
+}
+.fixed-button {
+    margin-top: 10px;
+    width: 100px;
+}
+
+/* Hero Section */
+.hero-img {
+    position: relative;
+    top: 2%;
+    left:17%;
+    height: 57vh;
+    box-shadow: 0 4px 14px rgb(0, 0, 0);
+    padding-bottom: 2%;
+    border-radius: 3%;
+}
+/* .btn-primary{
+    background-image: linear-gradient(to right, #000000 0%, #0e0202 100%);
+    background-color: #000026;
+    color: white;
+    border: 1px solid gold;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    color: gold;
+    border: 1px solid white;
+} */
+
+/* Modal Header */
+.katha-button div{
+    margin-left: 10%;
+}
+.modal-header{
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f0f1f);
+}
+.modal-title:hover{
+    color: gold !important;
+}
+iframe{
+    border: 1px solid white;
+}
+.modal-body iframe {
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); 
+}
+.modal-youtube-section{
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f0f1f);
+    color: white; 
+}
+.list-group-item{
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f0f1f);
+    color: white;
+}
+
+/* Video Info Styling */
+.text-muted{
+    color: white !important;
+}
+.video-thumbnail {
+    flex-shrink: 0;
+}
+.video-info h6 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffa900;
+}
+.video-info h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffa900;
+    font-weight: bold;
+}
+.video-info p {
+    font-size: 0.780rem;
+    margin: 0;
+}
+.video-description {
+    border: 2px solid wheat;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.video-description h5 {
+    font-size: 1.25rem; 
+    font-weight: bold;
+    color: #ffa900;
+}
+.video-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+
+
+/* Footer */
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.ashram-footer {
+    border-top:1px solid white ;
+    color: #ffffff;
+    padding: 40px 0;
+    background-image: linear-gradient(to right,#ff6600, rgb(152 13 13 / 87%), #710a0a);
+}
+.ashram-footer .footer-section h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.ashram-footer .footer-section p:hover {
+    color: gold ;
+}
+.ashram-footer .footer-section p,
+.ashram-footer .footer-section ul {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.ashram-footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.ashram-footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+.ashram-footer .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.ashram-footer .footer-section ul li a:hover {
+    color: gold;
+}
+.ashram-footer .social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 18px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+.ashram-footer .social-links a:hover {
+    color: gold;
+}
+.ashram-footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.ashram-footer .footer-bottom:hover {
+    color: gold;
+}
+.footer-attribution {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.footer-attribution:hover {
+    color: gold;
+}
+/* Styling for Katha Booking Card */
+/* 
+.katha-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgb(255 255 255 / 40%);
+    background: linear-gradient(to right, #ff0000, #ff007d5e);
+    border: 2px solid white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.katha-info {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #444;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-box img {
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.topics-section h4 {
+    margin-top: 20px;
+    color: #ffdd57;
+}
+
+.topics-list {
+    list-style-type: none;
+    padding-left: 0;
+    color: white;
+}
+
+.topics-list li {
+    padding: 8px;
+    background-color: #555;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+
+.katha-schedule-box {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.katha-schedule-scroll {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.katha-schedule-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.katha-schedule-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+} */
+
+
+
+/* Basic styling */
+
+.kath-booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: linear-gradient(to right, #024677 0%, #ce5959 100%); */
+    background-image: url('assets/imgs/schedule-modal/bg.png');
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    padding: 20px; /* Optional: Adjusts padding around the content */
+}
+
+
+/* Left column styling */
+
+/* 
+.katha-schedule-button {
+    display: block;
+    margin: 20px 0 10px 65px; 
+    padding: 10px 20px;
+    font-size: 18px;
+   cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+
+} */
+
+/* Right column styling */
+
+
+.katha-schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Modal styling */
+.modal-schedule {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.modal-schedule-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 3;
+}
+.modal-schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+.modal-schedule-header {
+    font-size: 24px;
+    margin-top: 15px;
+}
+.modal-schedule-info {
+    margin: 10px 0;
+    color: #555;
+}
+.topics-schedule-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.topics-schedule-list li {
+    margin: 5px 0;
+}
+.close-schedule-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+/* aasharm booking */
+/* General Room Card Styling */
+.room-card {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .room-card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* .btn-view-more {
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgb(116 12 22);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .btn-view-more:hover {
+    background-color: #b02a37;
+  } */
+  
+  /* Fullscreen Image Overlay */
+  .image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .image-overlay-content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .image-overlay img {
+    width: 340px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    color: #333;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  
+
+
+
+.platform-close {
+    position: absolute; /* Fix the button to the bottom-right */
+    bottom: 10px; /* Distance from the bottom of the modal */
+    right: 10px; /* Distance from the right of the modal */
+    width: 50px; /* Increase width */
+    height: 50px; /* Increase height */
+    font-size: 20px; /* Adjust font size if needed */
+    border-radius: 50%; /* Make it circular */
+    background-color: #ffc800; /* Light background for better visibility */
+    border: none; /* Remove default border */
+}
+
+.platform-close:hover {
+    background-color: #000000; /* Change background on hover */
+    color: white; /* Change icon color on hover */
+}
+
+/* Modal styling */
+.booking-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.booking-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.close-booking-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.platforms-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.platform-item {
+    display: flex;
+    align-items: center;
+    gap: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.platform-item:hover {
+    background-color: #f0f0f0;
+}
+
+.platform-logo {
+    width: 20%;
+    height: auto;
+}
+
+.booking-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.booking-link:hover {
+    color: #0056b3;
+}
+
+/* Button to open the modal */
+/* .open-booking-modal-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+} */
+
+/* Background with gradient */
+body {
+    background-image: linear-gradient(to right, #ff6600 -100%, #262928 50%);
+  }
+  
+  .carousel .carousel-inner .fade-image {
+    position: relative;
+    overflow: hidden;
+    width: 70%; /* Adjust image container width */
+    height: 600px; /* Adjust image container height */
+    margin: 0 auto;
+  }
+  
+  .fade-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 15px; /* Optional rounded corners */
+    /* box-shadow: 0px 6px 10px 10px rgb(red, green, blue); */
+    
+  }
+  
+  .fade-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(circle, rgba(255, 102, 0, 0) 60%, #f1b68f 100%); */
+    background-blend-mode: lighten;
+    pointer-events: none;
+  }
+  
+  
+
+  /* Evenet  */
+
+/* Common Card Styling */
+.event-card{
+    background-color: #333; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 6px rgb(0, 0, 0);
+    background-image: radial-gradient(circle at center, #cd5200 98%, #6b6649 100%, transparent 38%);
+    transition: transform 0.3s;
+    height: 500px; /* Set a fixed height */
+    overflow: visible; /* Ensures content that exceeds this height is hidden */
+}
+
+.gaushala-card {
+    background-color: #333; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 6px rgb(0, 0, 0);
+    background-image: radial-gradient(circle at center, #cd5200 98%, #6b6649 100%, transparent 38%);
+    transition: transform 0.3s;
+    height: 400px; /* Set a fixed height */
+    overflow: visible; /* Ensures content that exceeds this height is hidden */
+}
+.event-card img, .gaushala-card img  {
+    width: 100%;
+    background-size: contain;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.event-card:hover, .gaushala-card:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.event-card-content, .gaushala-card-content {
+    padding: 4px; /* Reduce padding to decrease card height */
+}
+
+.event-card-title, .gaushala-card-title {
+    padding:5px 10px;
+    font-size: 1.4rem;
+    margin-bottom: 5px; /* Slightly reduce margin for a compact layout */
+    color: #fff;
+}
+
+.event-card-content p, .gaushala-card-content p {
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    white-space: wrap; /* Keeps text on a single line */
+    overflow: visible;
+    text-overflow: ellipsis; /* Adds "..." for overflow text */
+}
+
+.btn-visit {
+    margin-top: 5% 32%;
+    color: #fff;
+    background-color: #dc3545; /* Danger color for buttons */
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px; /* Reduce padding for smaller button size */
+    font-size: 0.9rem; /* Smaller font size to fit compact design */
+}
+
+.btn-visit:hover {
+    background-color: #b02a37; /* Darken button on hover */
+}
+
+  
+  .custom-ratio {
+    position: relative;
+    padding-top: 40.25%; /* 16:9 aspect ratio */
+    height: 50%;
+    overflow: hidden;
+    max-width: 100%; /* Limit width to 80% */
+    margin: auto; /* Center the container */
+    box-shadow: 0 6px 14px rgb(0, 0, 0);
+
+}
+
+
+.custom-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Make the iframe fill the container */
+    height: 100%; /* Make the iframe fill the container */
+    box-shadow: 0 8px 8px 6px rgb(0, 0, 0) !important;
+
+}
+
+
+h1{
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.6); /* Red shadow */
+    font-size: 28px; /* Adjust font size if needed */
+    padding: 1%;
+}
+
+
+/* profile */
+
+.profile-card {
+    background-image: radial-gradient(circle at center, #cd5200 98%, #6b6649 100%, transparent 38%);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+    box-shadow: 0 8px 8px 8px rgb(0, 0, 0)!important;
+    transition: transform 0.3s;
+    width: 100%;
+    
+  }
+  
+  .profile-card:hover{
+    transform: scale(1.01); /* Slightly scales up the form */
+
+  }
+  .profile-card img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 14px rgb(0, 0, 0);
+
+  }
+  
+  .profile-card-content {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .profile-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .btn-profile {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-profile:hover {
+    background-color: #c82333;
+  }
+  
+
+/* contact us form */
+
+.contact-form{
+    width: 90%;
+}
+.form-info {
+    width: 50%;
+}
+.contact-form,
+.form-info {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 6px rgb(0, 0, 0);
+    background-image: radial-gradient(circle at center, #cd5200 98%, #6b6649 100%, transparent 38%);
+    transition: transform 0.3s ease; /* Adding ease-in effect */
+}
+
+.contact-form:hover,
+.form-info:hover {
+    transform: scale(1.01); /* Slightly scales up the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+  
+  .form-info h3,
+  .form-info h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .form-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .form-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .form-info a {
+    text-decoration: none;
+    color: #dc3545;
+  }
+  
+  .form-info a:hover {
+    color: #c82333;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media Queries */
+@media (min-width: 375px)  {
+    .hero-img {
+        width: 65vw !important;
+        --img-width: 70vw;
+        position: relative;
+        top: 2px;
+        right: 2%;
+    }
+    .btn-image {
+        width: 125px;
+        height: auto;
+        display: block;
+        margin-top: 2%;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 25px;
+        margin-top: 1%;
+    }
+    .event-card img{
+        height: 174px;
+    }
+    #ashramImageSlider .carousel-inner img {
+        height: 340px;
+        object-fit: cover;
+    }
+    .gaumata-img{
+        max-height: 250px;
+        width: auto;
+        margin-top: 7%;
+    }
+    #contact{
+        width: 100% !important;
+    }
+    }
+
+
+ @media (min-width: 414px) {
+    .hero-img {
+        width: 84vw !important;
+        --img-width: 70vw;
+        position: relative;
+        top: 2px;
+        right: 2%;
+    }
+    .profile-card .col-md-7 {
+        padding-left: 25px;
+        margin-top: 1%;
+    }
+    .event-card img{
+        height: 174px;
+    }
+    #ashramImageSlider .carousel-inner img {
+        height: 340px;
+        object-fit: cover;
+    }
+    .gaumata-img{
+        max-height: 250px;
+        width: auto;
+        margin-top: 7%;
+    }
+    #contact{
+        width: 100% !important;
+    }
+    } 
+
+/* For Mobile Phones (480px and below) */
+@media (min-width: 480px) {
+    .hero-img {
+        width: 73vw;
+        --img-width: 70vw;
+        position: relative;
+        top: -60px;
+        right: 8%;
+    }
+    .katha-button-img {
+        margin-top: -12%;
+    }
+    .hero-section+div {
+        top: 20%;
+        width: 100vw;
+    }
+
+    .katha-btn-img {
+        width: 80px !important;
+    }
+
+    .fixed-container {
+        top: 50%; 
+        right: 5px;
+    }
+
+    .fixed-container-live {
+        bottom: 5%;
+        left: 5px; 
+    }
+    .profile-card .col-md-7 {
+        padding-left: 13px;
+        margin-top: -3%;
+    }
+    .fixed-button {
+        width: 70px; 
+    }
+
+    .fixed-button-live {
+        width: 200px; 
+        font-size: 0.8rem; 
+    }
+
+    .btn-fixed {
+        width: 35px; 
+    }
+    #ashramImageSlider .carousel-inner img {
+        height: 350px;
+    }
+    .event-card img{
+        height: 150px !important;
+    }
+    #contact{
+        width: 100% !important;
+    }
+} 
+
+/* Small devices (up to 576px) */
+@media (min-width: 576px) {
+    .button-container {
+        flex-direction: row; /* Align Prev and Next buttons horizontally */
+        justify-content: center; /* Center the buttons */
+      }
+      
+      .button-upcoming-events {
+        margin-top: 15px; /* Space above the Click for More Upcoming Events button */
+      }
+    .ashram-booking-section {
+        padding: 1rem;
+    }
+
+    #ashramImageSlider {
+        height: auto;
+    }
+
+    .carousel-inner img {
+        max-height: 200px;
+    }
+
+    .room-feature-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-details {
+        font-size: 0.8rem;
+    }
+
+    .contact-info a {
+        font-size: 0.9rem;
+    }
+
+    .platform-logo {
+        width: 80px;
+        height: auto;
+    }
+    .gaushala-section .btn {
+        width: auto; /* Revert to auto width on medium screens and above */
+      }
+}
+
+/* Medium devices (576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .room-feature-card {
+        padding: 1.2rem;
+    }
+
+    .contact-details h5 {
+        font-size: 1rem;
+    }
+
+    .contact-info a {
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        max-height: 250px;
+    }
+
+    .platform-logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        width: 50vw;
+        --img-width: 50vw;
+    }
+
+    .hero-section+div {
+        top: 15%;
+        width: 90vw;
+    }
+
+    .katha-btn-img {
+        width: 60px !important;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .katha-btn {  
+        width: 108px !important;
+        font-size: 0.5rem !important;
+    }
+
+    .katha-button-img {
+        margin-top: -11%;
+    }
+
+    .profile-card {
+        width: 100% !important;
+    }
+}
+
+
+/* Media Queries */
+
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 74vw;
+        --img-width: 61vw;
+        margin-left: 10%;
+    }
+
+    .hero-section+div {
+        top: 15%;
+        width: 90vw;
+    }
+
+    .katha-btn-img{
+        width: 100px !important;
+        height: auto;
+        margin-top: 10%;
+    }
+    .katha-btn {
+        width: 160px !important;
+        font-size: 0.8rem !important;
+        margin-left: -10%;
+    }
+.katha-button-img{
+    margin-top: 8%;
+    margin-left: -3%;
+}
+.btn-image {
+    width: 110px;
+    height: auto;
+    display: block;
+}
+.profile-card{
+    width: 100% !important;
+}
+ 
+    }
+
+/* Large devices (768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .room-feature-card {
+        padding: 1.5rem;
+    }
+
+    .contact-info a {
+        font-size: 1.1rem;
+    }
+
+    .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .platform-logo {
+        width: 120px;
+    }
+}

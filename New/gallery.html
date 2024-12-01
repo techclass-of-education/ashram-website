@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .hero-section-aashram {
+      position: relative;
+      text-align: center;
+      color: white;
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: radial-gradient(circle at center, #ffffff, #ffa200 100%, transparent 100%);
+
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 2.5rem;
+      color: #343a40;
+      font-weight: bold;
+    }
+
+    .card {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      border: none;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card-body {
+      background-image: radial-gradient(circle at center, #ffffff, #ffa200 100%, transparent 100%);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #6c757d;
+    }
+
+    .gallery-footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #343a40;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <div class="fixed-container p-2 rounded" style="background-color: #ffffff;" id="btn-fix-box">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-in-left"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z" />
+      <path fill-rule="evenodd"
+        d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+    </svg>
+  </div>
+
+  <div class="fixed-container" id="fix-box" style="display: none;">
+    <!-- Image -->
+    <img src="/assets/imgs/bottom-fix-img/fixed-img.svg" alt="Fixed Image" class="fixed-image"
+      style="height: 25vh; width: auto;">
+
+    <!-- Close Button -->
+    <svg id="btn-fix-close" style="position: absolute;right:20px;color:white;" xmlns="http://www.w3.org/2000/svg"
+      width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" data-bs-toggle="tooltip"
+      title="Close">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+      <path
+        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+    </svg>
+
+    <div>
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/9112341148" target="_blank" data-bs-toggle="tooltip" title="Chat on WhatsApp">
+        <button class="btn-fixed fixed-button mx-2" style="font-size: 1.7rem;">
+          <i class="fab fa-whatsapp text-white"></i>
+        </button>
+      </a>
+
+      <!-- Email Button -->
+      <a href="mailto:krishnadasji2024@gmail.com" target="_blank" data-bs-toggle="tooltip" title="Email us">
+        <button class="btn-fixed fixed-button" style="font-size: 1.7rem;">
+          <i class="fas fa-envelope text-white"></i>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="fixed-container-live">
+    <!-- Live YouTube Button -->
+    <a class="col-12 col-md-6 btn btn-danger fixed-button-live"
+      href="https://www.youtube.com/@acharyakrishnadasofficial7502" target="_blank" data-bs-toggle="tooltip"
+      title="Watch Live">
+      <span style="font-size: larger;padding-right: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+        </svg>
+      </span>
+      <span style="font-size: larger;padding-right: 5px;">Live</span>
+      <span style="font-size: small;">कथा देखने के लिए सब्सक्राइब करे</span>
+    </a>
+  </div>
+
+  <!-- Go to Top Button -->
+  <button id="goToTopBtn" class="go-to-top" onclick="scrollToTop()" data-bs-toggle="tooltip" title="Go to Top">
+    &#8679; <!-- Up arrow icon -->
+  </button>
+
+  <!-- Navbar (Top Navigation) -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/imgs/logo/brand-logo.png" alt="Brand Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" onclick="openSidebar()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#katha-booking">Katha Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#ashram-booking-section">Room
+                Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#upcoming-event">Event</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#gaushala">Gaushala</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#profile">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.html#contact-us">Contact Us</a></li>
+          </ul>
+
+          <!-- Right-aligned Contact and Donate Button -->
+          <div class="d-flex align-items-center">
+            <span class="me-3 d-flex align-items-center">
+              <a href="tel:+917983887273" class="text-white text-decoration-none">
+                <strong class="text-white contact-no"><i class="fa-solid fa-phone contact-no me-2 text-white"></i>
+                  +91-7983887273</strong>
+              </a>
+            </span>
+
+            <!-- Donate Button -->
+            <a href="donation.html" class="btn btn-danger custom-donate-btn" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Click to make a donation">
+              Donate Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sidebar (For Small Screens) -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+    <a href="/index.html" onclick="scrollToSection('home')">Home</a>
+    <a href="/index.html#katha-booking" onclick="scrollToSection('carouselExampleIndicators')">Katha Booking</a>
+    <a href="/index.html#ashram-booking-section" onclick="scrollToSection('ashram-booking-section')">Room
+      Booking</a>
+    <a href="/index.html#upcoming-event" onclick="scrollToSection('event')">Event</a>
+    <a href="/index.html#gaushala" onclick="scrollToSection('gaushala')">Gaushala</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#donation">Donate Now</a>
+    <a href="/index.html#profile" onclick="scrollToSection('profile')">About Us</a>
+    <a href="/index.html#contact-us" onclick="scrollToSection('contact-us')">Contact Us</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section-aashram container-fluid bg-dark position-relative">
+    <!-- Background Image -->
+    <div class="hero-image-aashram"
+      style="background: url('/assets/imgs/gallery/WhatsApp\ Image\ 2024-11-30\ at\ 1.36.21\ PM.jpeg') no-repeat center center; background-size: cover; height: 70vh; position: relative;">
+      <!-- Text Over Image -->
+      <div class="hero-text-aashram text-center text-white d-flex align-items-center justify-content-center"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);">
+        <h1>Welcome to Aashram Ki Gallery</h1>
+      </div>
+    </div>
+  </section>
+
+
+  <hr style="border: 1px solid white;">
+  <!-- Gallery Title -->
+  <h2 class="gallery-title text-danger">Our Beautiful Memories</h2>
+
+  <!-- Gallery Section -->
+  <div class="container">
+    <div class="row g-4">
+      <!-- Image 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          <img src="/assets/imgs/gallery/WhatsApp Image 2024-11-30 at 1.36.44 PM (1).jpeg" class="card-img-top"
+            alt="Image 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Image Title 1</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Image 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          <img src="/assets/imgs/gallery/WhatsApp Image 2024-11-30 at 1.36.22 PM.jpeg" class="card-img-top"
+            alt="Image 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Image Title 2</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          <img src="/assets/imgs/gallery/WhatsApp Image 2024-11-30 at 1.36.23 PM.jpeg" class="card-img-top"
+            alt="Image 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Image Title 3</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Image 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          <img src="/assets/imgs/gallery/WhatsApp Image 2024-11-30 at 1.36.29 PM.jpeg" class="card-img-top"
+            alt="Image 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Image Title 4</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Image 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          <img src="/assets/imgs/gallery/WhatsApp Image 2024-11-30 at 1.36.44 PM.jpeg" class="card-img-top"
+            alt="Image 5">
+          <div class="card-body text-center">
+            <h5 class="card-title">Image Title 5</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Image 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          <img src="/assets/imgs/gallery/hero.jpeg" class="card-img-top" alt="Image 6">
+          <div class="card-body text-center">
+            <h5 class="card-title">Image Title 6</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="ashram-footer bg-dark text-white pt-1">
+    <div class="container my-5">
+      <!-- Contact Us Section -->
+      <div class="row">
+        <!-- Left Side: Contact Form -->
+        <div class="col-md-6 p-4"
+          style="background-image: radial-gradient(circle at center, #ffffff -45%, #ffa200 100%, transparent 100%);">
+          <!-- style="background: linear-gradient(225deg, rgba(252,136,69,1) 0%, rgba(253,247,29,0.5) 50%, rgba(58,151,180,1) 100%);"> -->
+          <h3 class="text-danger text-center mb-3 custom-icon">Contact Us</h3>
+          <hr style="border: 1px solid #1f0003 !important;width: 100% !important; margin: 10px auto !important;">
+          <form action="#" method="POST" class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label text-dark">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label text-dark">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label text-dark">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col-md-6">
+              <label for="kathaType" class="form-label text-dark">Katha Type</label>
+              <select class="form-select" id="kathaType" required>
+                <option value="" disabled selected>Choose Katha Type</option>
+                <option value="ram-katha">Ram Katha</option>
+                <option value="shrimad-bhagwat">Shrimad Bhagwat Katha</option>
+                <option value="shiv-mahapuran">Shiv Mahapuran Katha</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label for="message" class="form-label text-dark">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-danger btn-lg w-50">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Side: Map -->
+        <div class="col-md-6 p-4"
+          style="background-image: radial-gradient(circle at center, #ffffff -45%, #ffa200 100%, transparent 100%);">
+          <!-- style="background: linear-gradient(225deg, rgba(252,136,69,1) 0%, rgba(253,247,29,0.5) 50%, rgba(58,151,180,1) 100%);"> -->
+          <h3 class="text-danger text-center mb-3 custom-icon">Find Us on the Map</h3>
+          <hr style="border: 1px solid #1f0003 !important;width: 100% !important; margin: 10px auto !important;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.1870375698046!2d77.6933013!3d27.5696189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736f001f109673%3A0x838bd8c62311e14b!2sShri%20Krishna%20Shryaashrya%20Aashram!5e0!3m2!1sen!2sin!4v1698227960536!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" style="width: 100%; height: 300px; border: none;">
+          </iframe>
+          <p class=" text-dark text-center mt-3">
+            We are located in the heart of Vrindavan. Use the map above to find Shri Krishna Shryaashrya Aashram.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Social Media and Other Content -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h5>Follow Us</h5>
+        <div class="social-links mb-3">
+          <a href="https://www.facebook.com/updeshkrishna.shastri" target="_blank" class="mx-2 text-white"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/updeshkrishnashastri?igsh=MXQ1ZDRlbmp1ZGJzeg==" target="_blank"
+            class="mx-2 text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@acharyakrishnadasofficial7502" target="_blank" class="mx-2 text-white"
+            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Shri Krishna Shryashray Ashram. All Rights Reserved.</p>
+        <p>Website designed and developed by <a href="https://sournaksh.in/" target="_blank"
+            style="text-decoration: none; color: inherit;"><strong>Sournaksh Buildsoft Pvt Ltd.</strong></a></p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
